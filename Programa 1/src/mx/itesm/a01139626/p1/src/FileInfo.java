@@ -67,6 +67,64 @@ public class FileInfo implements ErrorMessages {
 		return true;
 	}
 
+	
+	
+	/**
+	 * @return the sFileName
+	 */
+	public String getsFileName() {
+		return sFileName;
+	}
+
+	/**
+	 * @param sFileName the sFileName to set
+	 */
+	public void setsFileName(String sFileName) {
+		this.sFileName = sFileName;
+	}
+
+	/**
+	 * @return the iWhiteLines
+	 */
+	public int getiWhiteLines() {
+		return iWhiteLines;
+	}
+
+	/**
+	 * @param iWhiteLines the iWhiteLines to set
+	 */
+	public void setiWhiteLines(int iWhiteLines) {
+		this.iWhiteLines = iWhiteLines;
+	}
+
+	/**
+	 * @return the iInfoLines
+	 */
+	public int getiInfoLines() {
+		return iInfoLines;
+	}
+
+	/**
+	 * @param iInfoLines the iInfoLines to set
+	 */
+	public void setiInfoLines(int iInfoLines) {
+		this.iInfoLines = iInfoLines;
+	}
+
+	/**
+	 * @return the iTotalLines
+	 */
+	public int getiTotalLines() {
+		return iTotalLines;
+	}
+
+	/**
+	 * @param iTotalLines the iTotalLines to set
+	 */
+	public void setiTotalLines(int iTotalLines) {
+		this.iTotalLines = iTotalLines;
+	}
+
 	/**
 	 * toString
 	 * 
