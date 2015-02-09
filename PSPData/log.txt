@@ -1,0 +1,63 @@
+Process Dashboard - logging started at Fri Feb 06 15:07:22 CST 2015
+Oracle Corporation JRE 1.7.0_76; Linux
+Using LocalWorkingDirectory[/home/ppesq/.pspdata]
+2015-02-06 15:07:23.169:INFO:oejs.Server:jetty-8.y.z-SNAPSHOT
+2015-02-06 15:07:23.254:INFO:oejs.AbstractConnector:Started LocalConnector@0.0.0.0:0
+2015-02-06 15:07:23.473:INFO:oejs.AbstractConnector:Started SelectChannelConnector@127.0.0.1:2468
+Feb 06, 2015 3:07:26 PM net.sourceforge.processdash.ProcessDashboard <init>
+INFO: Process Dashboard version 2.1.5
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Exception in thread "AWT-EventQueue-0" java.lang.UnsupportedOperationException: The system tray is not supported on the current platform.
+	at java.awt.SystemTray.getSystemTray(SystemTray.java:186)
+	at sun.awt.X11.XTrayIconPeer$4$1.run(XTrayIconPeer.java:211)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:738)
+	at java.awt.EventQueue.access$300(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:699)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:713)
+	at java.awt.EventQueue$4.run(EventQueue.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:710)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Saved /home/ppesq/.pspdata/2.dat

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<timeLogEntries>
+  <time id="3" comment="Entendí requerimientos. " flag="M" />
+  <time id="4" comment="Llené la información de estimación de tiempo. " flag="M" />
+  <time id="5" path="/Non Project/PSP Training/Program 1/Design" flag="M" />
+  <time id="6" path="/Non Project/PSP Training/Program 1/Design" flag="M" />
+  <time id="7" path="/Non Project/PSP Training/Program 1/Design" flag="M" />
+  <time id="8" path="/Non Project/PSP Training/Program 1/Design" flag="M" />
+  <time id="9" path="/Non Project/PSP Training/Program 1/Design" flag="M" />
+  <time id="12" path="/Non Project/PSP Training/Program 1/Code" start="@1423257471152" delta="37" interrupt="4" flag="A" />
+  <time id="13" path="/Non Project/PSP Training/Program 1/Code" start="@1423260543000" delta="21" interrupt="4" flag="A" />
+</timeLogEntries>
