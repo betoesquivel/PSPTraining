@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<defectLog>
+  <defect num="1" type="Interface" inj="Design" rem="Code" ft="1.9" fd="" desc="Me faltó poner tipo de dato de retorno al método toString como string. " date="@1423259177606" />
+  <defect num="2" type="Function" inj="Design" rem="Code" ft="11.1" fd="" desc="Adding an that contains error messages will&#10;aid development. I forgot to think about this in design. " date="@1423260324589" />
+</defectLog>

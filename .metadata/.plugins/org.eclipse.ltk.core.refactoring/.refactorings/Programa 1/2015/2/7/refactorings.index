@@ -1,2 +1,13 @@
 1423454032248	Rename local variable 'o1'
 1423454115488	Rename local variable 'o2'
+1423620777356	Encapsulate field 'parFinder'
+1423621408790	Rename field 'pInfoLine'
+1423621412673	Rename field 'pWhiteLine'
+1423621448841	Rename field 'sMatcher'
+1423621471968	Rename field 'patInfoLine'
+1423621484835	Rename field 'patWhiteLine'
+1423622560178	Encapsulate field 'bExisting'
+1423626054394	Copy files
+1423684005328	Delete element
+1423684012696	Move file
+1423684182478	Copy file

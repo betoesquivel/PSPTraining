@@ -1,0 +1,33 @@
+package mx.itesm.a01139626.p1.src;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Parser implements ErrorMessages{
+	private Pattern patInfoLine; 
+	private Pattern patWhiteLine; 
+	private Matcher matMatcher; 
+	
+	public Parser(){
+		
+		// finds non-space characters
+		this.patInfoLine = Pattern.compile("\\S");
+		// matches strings with only spaces
+		this.patWhiteLine = Pattern.compile("\\s+");
+		
+	}
+	public boolean isWhiteLine(String s){
+		
+		matMatcher = patWhiteLine.matcher(s);
+		
+		return matMatcher.matches();
+		
+	}
+	public boolean isInfoLine(String s){
+		
+		matMatcher = patInfoLine.matcher(s);
+		
+		return matMatcher.find();
+		
+	}
+}

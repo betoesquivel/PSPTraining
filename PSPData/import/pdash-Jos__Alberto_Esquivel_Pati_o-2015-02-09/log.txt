@@ -1,0 +1,8 @@
+Process Dashboard - logging started at Mon Feb 09 06:38:03 CST 2015
+Oracle Corporation JRE 1.7.0_76; Linux
+Using LocalWorkingDirectory[/home/ppesq/.pspdata]
+2015-02-09 06:38:03.963:INFO:oejs.Server:jetty-8.y.z-SNAPSHOT
+2015-02-09 06:38:04.003:INFO:oejs.AbstractConnector:Started LocalConnector@0.0.0.0:0
+2015-02-09 06:38:04.036:INFO:oejs.AbstractConnector:Started SelectChannelConnector@127.0.0.1:2468
+Feb 09, 2015 6:38:05 AM net.sourceforge.processdash.ProcessDashboard <init>
+INFO: Process Dashboard version 2.1.5

@@ -1,0 +1,9 @@
+package mx.itesm.a01139626.p1.src;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Parser implements ErrorMessages{
+	Pattern pInfoLine; 
+	Matcher sMatcher; 
+}

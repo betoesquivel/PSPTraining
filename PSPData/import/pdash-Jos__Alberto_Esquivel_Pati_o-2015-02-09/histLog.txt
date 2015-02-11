@@ -1,0 +1,317 @@
+----------------------------------------------------------------------
+Process Dashboard - logging started at Fri Jan 30 15:47:50 CST 2015
+Oracle Corporation JRE 1.7.0_76; Linux
+Using LocalWorkingDirectory[/home/ppesq/.pspdata]
+2015-01-30 15:47:50.552:INFO:oejs.Server:jetty-8.y.z-SNAPSHOT
+2015-01-30 15:47:50.575:INFO:oejs.AbstractConnector:Started LocalConnector@0.0.0.0:0
+2015-01-30 15:47:50.593:INFO:oejs.AbstractConnector:Started SelectChannelConnector@127.0.0.1:2468
+Jan 30, 2015 3:47:52 PM net.sourceforge.processdash.ProcessDashboard <init>
+INFO: Process Dashboard version 2.1.5
+Jan 30, 2015 3:47:53 PM net.sourceforge.processdash.tool.export.DataImporter importData
+INFO: importing /home/ppesq/.pspdata/import/customPsp.pdash
+Jan 30, 2015 3:47:56 PM net.sourceforge.processdash.hier.HierarchyAltererMessageHandler handle
+INFO: Handling hierarchy alteration message pdash.alterHierarchy/add-tec-de-monterrey-psp-training
+Saved /home/ppesq/.pspdata/global.dat
+Jan 30, 2015 3:48:00 PM net.sourceforge.processdash.hier.HierarchyAltererMessageHandler handle
+INFO: Done handling hierarchy alteration message
+Saved /home/ppesq/.pspdata/1.dat
+Saved /home/ppesq/.pspdata/0.dat
+Saved /home/ppesq/.pspdata/global.dat
+Saved /home/ppesq/.pspdata/1.dat
+Saved /home/ppesq/.pspdata/0.dat
+Saved /home/ppesq/.pspdata/global.dat
+Saved /home/ppesq/.pspdata/1.dat
+Saved /home/ppesq/.pspdata/1.dat
+Saved /home/ppesq/.pspdata/1.dat
+Jan 30, 2015 3:57:53 PM net.sourceforge.processdash.tool.export.DataImporter closeFile
+INFO: closing import /home/ppesq/.pspdata/import/customPsp.pdash
+Saved /home/ppesq/.pspdata/1.dat
+Saved /home/ppesq/.pspdata/1.dat
+Saved /home/ppesq/.pspdata/1.dat
+Saved /home/ppesq/.pspdata/global.dat
+Saved /home/ppesq/.pspdata/1.dat
+Saved /home/ppesq/.pspdata/1.dat
+Saved /home/ppesq/.pspdata/0.dat
+Saved /home/ppesq/.pspdata/1.dat
+Saved /home/ppesq/.pspdata/0.dat
+Saved /home/ppesq/.pspdata/1.dat
+Saved /home/ppesq/.pspdata/1.dat
+Saved /home/ppesq/.pspdata/1.dat
+Saved /home/ppesq/.pspdata/1.dat
+Jan 30, 2015 4:16:03 PM net.sourceforge.processdash.ProcessDashboard quit
+INFO: Successfully saved all data.
+2015-01-30 16:16:03.317:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-01-30 16:16:03.318:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/dashHelp.jar!/Templates/}
+2015-01-30 16:16:03.321:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-01-30 16:16:03.322:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/extras.jar!/Templates/}
+2015-01-30 16:16:03.323:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-01-30 16:16:03.323:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/importPSP.jar!/Templates/}
+2015-01-30 16:16:03.325:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-01-30 16:16:03.327:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/l10nTool.jar!/Templates/}
+2015-01-30 16:16:03.331:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-01-30 16:16:03.332:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/pspForEng.jar!/Templates/}
+2015-01-30 16:16:03.333:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-01-30 16:16:03.333:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/pspProc2.jar!/Templates/}
+2015-01-30 16:16:03.334:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-01-30 16:16:03.334:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/pspdash.jar!/Templates/}
+----------------------------------------------------------------------
+Process Dashboard - logging started at Thu Feb 05 15:22:32 CST 2015
+Oracle Corporation JRE 1.7.0_76; Linux
+Using LocalWorkingDirectory[/home/ppesq/.pspdata]
+2015-02-05 15:22:32.394:INFO:oejs.Server:jetty-8.y.z-SNAPSHOT
+2015-02-05 15:22:32.456:INFO:oejs.AbstractConnector:Started LocalConnector@0.0.0.0:0
+2015-02-05 15:22:32.521:INFO:oejs.AbstractConnector:Started SelectChannelConnector@127.0.0.1:2468
+Feb 05, 2015 3:22:35 PM net.sourceforge.processdash.ProcessDashboard <init>
+INFO: Process Dashboard version 2.1.5
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Feb 05, 2015 4:29:39 PM net.sourceforge.processdash.ProcessDashboard quit
+INFO: Successfully saved all data.
+2015-02-05 16:29:39.817:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-02-05 16:29:39.817:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/dashHelp.jar!/Templates/}
+2015-02-05 16:29:39.834:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-02-05 16:29:39.835:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/extras.jar!/Templates/}
+2015-02-05 16:29:39.836:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-02-05 16:29:39.837:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/importPSP.jar!/Templates/}
+2015-02-05 16:29:39.838:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-02-05 16:29:39.839:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/l10nTool.jar!/Templates/}
+2015-02-05 16:29:39.840:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-02-05 16:29:39.841:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/pspForEng.jar!/Templates/}
+2015-02-05 16:29:39.842:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-02-05 16:29:39.844:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/pspProc2.jar!/Templates/}
+2015-02-05 16:29:39.845:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-02-05 16:29:39.846:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/pspdash.jar!/Templates/}
+----------------------------------------------------------------------
+Process Dashboard - logging started at Fri Feb 06 11:05:57 CST 2015
+Oracle Corporation JRE 1.7.0_76; Linux
+Using LocalWorkingDirectory[/home/ppesq/.pspdata]
+2015-02-06 11:05:58.297:INFO:oejs.Server:jetty-8.y.z-SNAPSHOT
+2015-02-06 11:05:58.368:INFO:oejs.AbstractConnector:Started LocalConnector@0.0.0.0:0
+2015-02-06 11:05:58.405:INFO:oejs.AbstractConnector:Started SelectChannelConnector@127.0.0.1:2468
+Feb 06, 2015 11:06:01 AM net.sourceforge.processdash.ProcessDashboard <init>
+INFO: Process Dashboard version 2.1.5
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Feb 06, 2015 11:59:24 AM net.sourceforge.processdash.ProcessDashboard quit
+INFO: Successfully saved all data.
+2015-02-06 11:59:24.978:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-02-06 11:59:24.979:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/dashHelp.jar!/Templates/}
+2015-02-06 11:59:25.016:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-02-06 11:59:25.017:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/extras.jar!/Templates/}
+2015-02-06 11:59:25.018:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-02-06 11:59:25.018:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/importPSP.jar!/Templates/}
+2015-02-06 11:59:25.019:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-02-06 11:59:25.019:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/l10nTool.jar!/Templates/}
+2015-02-06 11:59:25.020:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-02-06 11:59:25.021:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/pspForEng.jar!/Templates/}
+2015-02-06 11:59:25.021:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-02-06 11:59:25.022:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/pspProc2.jar!/Templates/}
+2015-02-06 11:59:25.023:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-02-06 11:59:25.023:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/home/ppesq/Process%20Dashboard/pspdash.jar!/Templates/}
+----------------------------------------------------------------------
+Process Dashboard - logging started at Fri Feb 06 12:06:59 CST 2015
+Oracle Corporation JRE 1.7.0_76; Linux
+Using LocalWorkingDirectory[/home/ppesq/.pspdata]
+2015-02-06 12:07:01.150:INFO:oejs.Server:jetty-8.y.z-SNAPSHOT
+2015-02-06 12:07:01.220:INFO:oejs.AbstractConnector:Started LocalConnector@0.0.0.0:0
+2015-02-06 12:07:01.678:INFO:oejs.AbstractConnector:Started SelectChannelConnector@127.0.0.1:2468
+Feb 06, 2015 12:07:08 PM net.sourceforge.processdash.ProcessDashboard <init>
+INFO: Process Dashboard version 2.1.5
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Exception in thread "AWT-EventQueue-0" java.lang.UnsupportedOperationException: The system tray is not supported on the current platform.
+	at java.awt.SystemTray.getSystemTray(SystemTray.java:186)
+	at sun.awt.X11.XTrayIconPeer$4$1.run(XTrayIconPeer.java:211)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:738)
+	at java.awt.EventQueue.access$300(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:699)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:713)
+	at java.awt.EventQueue$4.run(EventQueue.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:710)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Saved /home/ppesq/.pspdata/2.dat
+----------------------------------------------------------------------
+Process Dashboard - logging started at Fri Feb 06 14:22:49 CST 2015
+Oracle Corporation JRE 1.7.0_76; Linux
+Using LocalWorkingDirectory[/home/ppesq/.pspdata]
+2015-02-06 14:22:49.390:INFO:oejs.Server:jetty-8.y.z-SNAPSHOT
+2015-02-06 14:22:49.416:INFO:oejs.AbstractConnector:Started LocalConnector@0.0.0.0:0
+2015-02-06 14:22:49.455:INFO:oejs.AbstractConnector:Started SelectChannelConnector@127.0.0.1:2468
+Feb 06, 2015 2:22:51 PM net.sourceforge.processdash.ProcessDashboard <init>
+INFO: Process Dashboard version 2.1.5
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Exception in thread "AWT-EventQueue-0" java.lang.UnsupportedOperationException: The system tray is not supported on the current platform.
+	at java.awt.SystemTray.getSystemTray(SystemTray.java:186)
+	at sun.awt.X11.XTrayIconPeer$4$1.run(XTrayIconPeer.java:211)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:738)
+	at java.awt.EventQueue.access$300(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:699)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:713)
+	at java.awt.EventQueue$4.run(EventQueue.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:710)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+----------------------------------------------------------------------
+Process Dashboard - logging started at Fri Feb 06 15:07:22 CST 2015
+Oracle Corporation JRE 1.7.0_76; Linux
+Using LocalWorkingDirectory[/home/ppesq/.pspdata]
+2015-02-06 15:07:23.169:INFO:oejs.Server:jetty-8.y.z-SNAPSHOT
+2015-02-06 15:07:23.254:INFO:oejs.AbstractConnector:Started LocalConnector@0.0.0.0:0
+2015-02-06 15:07:23.473:INFO:oejs.AbstractConnector:Started SelectChannelConnector@127.0.0.1:2468
+Feb 06, 2015 3:07:26 PM net.sourceforge.processdash.ProcessDashboard <init>
+INFO: Process Dashboard version 2.1.5
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Saved /home/ppesq/.pspdata/2.dat
+Exception in thread "AWT-EventQueue-0" java.lang.UnsupportedOperationException: The system tray is not supported on the current platform.
+	at java.awt.SystemTray.getSystemTray(SystemTray.java:186)
+	at sun.awt.X11.XTrayIconPeer$4$1.run(XTrayIconPeer.java:211)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:312)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:738)
+	at java.awt.EventQueue.access$300(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:699)
+	at java.awt.EventQueue$3.run(EventQueue.java:697)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:713)
+	at java.awt.EventQueue$4.run(EventQueue.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:710)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+Saved /home/ppesq/.pspdata/2.dat
+----------------------------------------------------------------------
+Process Dashboard - logging started at Mon Feb 09 06:38:03 CST 2015
+Oracle Corporation JRE 1.7.0_76; Linux
+Using LocalWorkingDirectory[/home/ppesq/.pspdata]
+2015-02-09 06:38:03.963:INFO:oejs.Server:jetty-8.y.z-SNAPSHOT
+2015-02-09 06:38:04.003:INFO:oejs.AbstractConnector:Started LocalConnector@0.0.0.0:0
+2015-02-09 06:38:04.036:INFO:oejs.AbstractConnector:Started SelectChannelConnector@127.0.0.1:2468
+Feb 09, 2015 6:38:05 AM net.sourceforge.processdash.ProcessDashboard <init>
+INFO: Process Dashboard version 2.1.5

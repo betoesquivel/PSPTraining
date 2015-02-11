@@ -8,11 +8,11 @@
     <node name="PSP Training" templateID="pspCourseRoot" dataFile="0.dat" selected="true">
       <node name="Student Profile" templateID="pfeStudentProfile" dataFile="1.dat"/>
       <node name="Program 1" templateID="PSP0" dataFile="2.dat" defectLog="0.def" selected="true">
-        <node name="Planning" selected="true"/>
+        <node name="Planning"/>
         <node name="Design"/>
         <node name="Code"/>
         <node name="Compile"/>
-        <node name="Test"/>
+        <node name="Test" selected="true"/>
         <node name="Postmortem"/>
       </node>
       <node name="Program 2" templateID="PSP1" dataFile="3.dat" defectLog="1.def">

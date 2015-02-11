@@ -12,6 +12,8 @@ public class FileInfo implements ErrorMessages {
 	private int iInfoLines;
 	private int iTotalLines;
 	private BufferedReader bufFileReader;
+	private Parser parFinder; 
+	private boolean bExisting; 
 
 	/**
 	 * FileInfo String constructor
@@ -21,10 +23,24 @@ public class FileInfo implements ErrorMessages {
 	 * @param sFileName with a file name with extension.
 	 */
 	public FileInfo(String sFileName) {
-		this.sFileName = sFileName;
-		this.iWhiteLines = 0;
-		this.iTotalLines = 0;
+		
+		// init file name
+		setsFileName(sFileName);
+		
+		// at first, the file is non existent
+		setbExisting(false);
+		
+		// zero stat counters
+		setiWhiteLines(0);
+		setiInfoLines(0);
+		setiTotalLines(0);
+		
+		// initialize the parser, compiling the regexps
+		setParFinder(new Parser());
+		
+		// null the file reader
 		this.bufFileReader = null;
+		
 	}
 
 	/**
@@ -44,17 +60,21 @@ public class FileInfo implements ErrorMessages {
 		try {
 			bufFileReader = new BufferedReader(new FileReader(new File(
 					this.sFileName)));
-			
+			setbExisting(true);
 			try {
-				String sLine = null;
-				while ((sLine = bufFileReader.readLine()) != null) {
-					sLine = sLine.trim();
-					if (sLine == "") {
+				int iChar;
+				String content = null; 
+				while ((iChar = bufFileReader.read()) != -1) {
+					if (getParFinder().isWhiteLine(sChar)) {
 						this.iWhiteLines += 1;
 					}else {
 						this.iInfoLines += 1;
 					}
-					this.iTotalLines += 1; 
+					this.iTotalLines += 1;
+					
+					/*
+					 *  Remember the last input. If it was a letter, 
+					 */
 				}	
 			} catch (IOException e) {
 				System.out.println(sIO_EXCEPTION);
@@ -62,6 +82,8 @@ public class FileInfo implements ErrorMessages {
 		} catch (FileNotFoundException e) {
 			// Print appropriate message constant.
 			System.out.println(sFILE_NOT_FOUND);
+			// The state of this file is of Non-existing. 
+			setbExisting(false);
 			return false;
 		}
 		return true;
@@ -73,56 +95,106 @@ public class FileInfo implements ErrorMessages {
 	 * @return the sFileName
 	 */
 	public String getsFileName() {
+		
 		return sFileName;
+		
 	}
 
 	/**
 	 * @param sFileName the sFileName to set
 	 */
 	public void setsFileName(String sFileName) {
+		
 		this.sFileName = sFileName;
+		
 	}
 
 	/**
 	 * @return the iWhiteLines
 	 */
 	public int getiWhiteLines() {
+		
 		return iWhiteLines;
+		
 	}
 
 	/**
 	 * @param iWhiteLines the iWhiteLines to set
 	 */
 	public void setiWhiteLines(int iWhiteLines) {
+		
 		this.iWhiteLines = iWhiteLines;
+		
 	}
 
 	/**
 	 * @return the iInfoLines
 	 */
 	public int getiInfoLines() {
+		
 		return iInfoLines;
+		
 	}
 
 	/**
 	 * @param iInfoLines the iInfoLines to set
 	 */
 	public void setiInfoLines(int iInfoLines) {
+		
 		this.iInfoLines = iInfoLines;
+		
 	}
 
 	/**
 	 * @return the iTotalLines
 	 */
 	public int getiTotalLines() {
+		
 		return iTotalLines;
+		
 	}
 
 	/**
 	 * @param iTotalLines the iTotalLines to set
 	 */
 	public void setiTotalLines(int iTotalLines) {
+		
 		this.iTotalLines = iTotalLines;
+		
+	}
+
+	/**
+	 * @return the parFinder
+	 */
+	public Parser getParFinder() {
+		
+		return parFinder;
+		
+	}
+
+	/**
+	 * @param parFinder the parFinder to set
+	 */
+	public void setParFinder(Parser parFinder) {
+		
+		this.parFinder = parFinder;
+		
+	}
+
+	/**
+	 * @return the bExisting
+	 */
+	public boolean isbExisting() {
+		return bExisting;
+	}
+
+	/**
+	 * @param bExisting the bExisting to set
+	 */
+	public void setbExisting(boolean bExisting) {
+		
+		this.bExisting = bExisting;
+		
 	}
 
 	/**
@@ -134,10 +206,17 @@ public class FileInfo implements ErrorMessages {
 	 * of the object. 
 	 */
 	public String toString() {
+		
 		String sRepresentation = "Nombre del archivo: %s\n"
 				+ "Cantidad de líneas en blanco: %d\n"
 				+ "Cantidad de líneas con información: %d";
-		return String.format(sRepresentation, this.sFileName, this.iWhiteLines,
-				this.iInfoLines);
+		
+		// Set string to file not found, or format output accordingly.
+		sRepresentation = (isbExisting()) ? 
+			String.format(sRepresentation, getsFileName(), getiWhiteLines(), getiInfoLines()) : 
+			String.format("The file named %s, was not found.", getsFileName());
+		
+		return sRepresentation;
+		
 	}
 }

@@ -1,0 +1,23 @@
+import static org.junit.Assert.fail;
+import mx.itesm.a01139626.p1.src.FileLineSorter;
+
+import org.junit.Test;
+
+
+public class FileLineSorterTest {
+	FileLineSorter filSorter;
+	
+	
+	@Test
+	public void testWhiteLineCounter(){
+		
+		filSorter.addFileName("Prueba5LineasBlanco.txt");
+		
+	}
+	
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

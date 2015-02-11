@@ -1,0 +1,16 @@
+package mx.itesm.a01139626.p1.src;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Parser implements ErrorMessages{
+	private Pattern pInfoLine; 
+	private Matcher sMatcher; 
+	
+	public Parser(){
+		this.pInfoLine = Pattern.compile("\\s"); 
+	}
+	public boolean isInfoLine(String s){
+		sMatcher
+	}
+}

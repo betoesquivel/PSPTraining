@@ -1,10 +1,13 @@
 #include <pspForEng3/psp0/dataFile.txt>
 = Data for /Non Project/PSP Training/Program 1
-Code/Defects Removed==2.0
+Code/Completed=@1423626073706
+Code/Defects Injected==3.0
+Code/Defects Removed==4.0
 Code/Started=@1423257471152
-Code/Time==58.0
+Code/Time==166.0
+Compile/Completed=@1423626104097
 Design/Completed=@1423257468061
-Design/Defects Injected==2.0
+Design/Defects Injected==7.0
 Design/Started=@1423254187166
 Design/Time==119.0
 Estimated Time=480.0
@@ -12,3 +15,6 @@ Planning/Completed=@1423254184723
 Planning/Started=@1423173818027
 Planning/Time==22.0
 Started=@1423173818027
+Test/Defects Removed==6.0
+Test/Started=@1423626104097
+Test/Time==93.0
