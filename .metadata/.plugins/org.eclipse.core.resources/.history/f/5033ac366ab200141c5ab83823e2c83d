@@ -179,11 +179,11 @@ public class FileLineSorter implements ErrorMessages{
 			}
 			iCount = 0;
 			bValid = true; 
-			filSorter.setsArrFileNames(new ArrayList<String>());
 			while (iCount < iFileNumber && bValid) {
 				
 				sFName = bufIn.readLine();
 				bValid = parValidator.isValidFile(sFName);
+				filSorter.setsArrFileNames(new ArrayList<String>());
 				if (bValid){
 					// add to file list
 					filSorter.addFileName(sFName);

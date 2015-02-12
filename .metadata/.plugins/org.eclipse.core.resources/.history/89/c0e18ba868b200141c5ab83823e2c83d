@@ -56,6 +56,15 @@ public class Parser implements ErrorMessages{
 		return matMatcher.matches();
 	}
 	
+//	public int countLines(String s){
+//		matMatcher = patLines.matcher(s);
+//		int iCount = 0;
+//		while(matMatcher.find()){
+//			iCount += 1;
+//		}
+//		return iCount;
+//	}
+	
 	public int countInfoLines(String s){
 		matMatcher = patInfoLines.matcher(s);
 		int iCount = 0;
