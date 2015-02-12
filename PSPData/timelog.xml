@@ -4,17 +4,21 @@
   <time id="2" path="/Non Project/PSP Training/Student Profile" start="@1422655266131" delta="13" />
   <time id="3" path="/Non Project/PSP Training/Program 1/Planning" start="@1423173818027" delta="21" interrupt="4" comment="Entendí requerimientos. " />
   <time id="4" path="/Non Project/PSP Training/Program 1/Planning" start="@1423242373968" delta="1" comment="Llené la información de estimación de tiempo. " />
-  <time id="5" path="/Non Project/PSP Training/Program 1/Design" start="@1423242779223" delta="46" />
-  <time id="6" path="/Non Project/PSP Training/Program 1/Design" start="@1423246181613" delta="6" interrupt="5" />
-  <time id="7" path="/Non Project/PSP Training/Program 1/Design" start="@1423247155257" delta="16" interrupt="4" />
-  <time id="8" path="/Non Project/PSP Training/Program 1/Design" start="@1423248480352" delta="20" />
-  <time id="9" path="/Non Project/PSP Training/Program 1/Design" start="@1423250392370" delta="4" />
-  <time id="10" path="/Non Project/PSP Training/Program 1/Design" start="@1423254187166" delta="11" />
-  <time id="11" path="/Non Project/PSP Training/Program 1/Design" start="@1423255273513" delta="16" />
-  <time id="12" path="/Non Project/PSP Training/Program 1/Code" start="@1423257471152" delta="37" interrupt="4" />
-  <time id="13" path="/Non Project/PSP Training/Program 1/Code" start="@1423260543000" delta="21" interrupt="4" />
+  <time id="5" path="/Non Project/PSP Training/Program 1/Design" start="@1423242779223" delta="46" comment="Investigación de atributos de java" />
+  <time id="6" path="/Non Project/PSP Training/Program 1/Design" start="@1423246181613" delta="6" interrupt="5" comment="Investigación de archivos y su lectura" />
+  <time id="7" path="/Non Project/PSP Training/Program 1/Design" start="@1423247155257" delta="16" interrupt="4" comment="Investigación del método toString" />
+  <time id="8" path="/Non Project/PSP Training/Program 1/Design" start="@1423248480352" delta="20" comment="Investigación de expresiones regulares" />
+  <time id="9" path="/Non Project/PSP Training/Program 1/Design" start="@1423250392370" delta="4" comment="Más investigación de expresiones regulares." />
+  <time id="10" path="/Non Project/PSP Training/Program 1/Design" start="@1423254187166" delta="11" comment="Diseño de UML" />
+  <time id="11" path="/Non Project/PSP Training/Program 1/Design" start="@1423255273513" delta="16" comment="Diseño de casos de pruebas." />
+  <time id="12" path="/Non Project/PSP Training/Program 1/Code" start="@1423257471152" delta="37" interrupt="4" comment="Codificación de la clase FileInfo" />
+  <time id="13" path="/Non Project/PSP Training/Program 1/Code" start="@1423260543000" delta="21" interrupt="4" comment="Codificación de la clase Parser" />
   <time id="14" path="/Non Project/PSP Training/Program 1/Code" start="@1423602656527" delta="2" interrupt="1" />
-  <time id="15" path="/Non Project/PSP Training/Program 1/Code" start="@1423619354644" delta="106" interrupt="5" />
-  <time id="16" path="/Non Project/PSP Training/Program 1/Test" start="@1423626104097" delta="14" />
-  <time id="17" path="/Non Project/PSP Training/Program 1/Test" start="@1423628012820" delta="2" interrupt="2" />
+  <time id="15" path="/Non Project/PSP Training/Program 1/Code" start="@1423619354644" delta="106" interrupt="5" comment="Codificación de la lógica de la clase principal. " />
+  <time id="16" path="/Non Project/PSP Training/Program 1/Test" start="@1423626104097" delta="14" comment="Codificación de JUnit" />
+  <time id="17" path="/Non Project/PSP Training/Program 1/Test" start="@1423628012820" delta="2" interrupt="2" comment="Codificación de JUnit" />
+  <time id="18" path="/Non Project/PSP Training/Program 1/Test" start="@1423682932921" delta="38" comment="Ejecución de pruebas" />
+  <time id="19" path="/Non Project/PSP Training/Program 1/Test" start="@1423695564312" delta="148" interrupt="31" comment="Ejecución de pruebas, y aquí empecé a resolver la mayor parte de los errores. Principalmente el de la línea en blanco. " />
+  <time id="20" path="/Non Project/PSP Training/Program 1/Test" start="@1423707786000" delta="32" />
+  <time id="21" path="/Non Project/PSP Training/Program 1/Postmortem" start="@1423709686227" delta="15" interrupt="4" />
 </timeLogEntries>

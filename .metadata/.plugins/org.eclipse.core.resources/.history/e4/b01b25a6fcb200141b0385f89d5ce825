@@ -12,7 +12,7 @@ public class FileLineSorterTest {
 	
 	@Test
 	public void testWhiteLineCounter(){
-		System.out.println("\nWHITELINES");		
+		System.out.println("WHITELINES");		
 		filSorter = new FileLineSorter();
 		filSorter.addFileName("Prueba5LineasBlanco.txt");
 		filSorter.parseFiles();
@@ -26,7 +26,7 @@ public class FileLineSorterTest {
 	}
 	@Test
 	public void testInfoLineCounter(){
-		System.out.println("\nINFOLINES");
+		System.out.println("INFOLINES");
 		filSorter = new FileLineSorter();
 		filSorter.addFileName("Prueba5LineasInformacion.txt");
 		filSorter.parseFiles();
@@ -39,7 +39,7 @@ public class FileLineSorterTest {
 	}
 	@Test
 	public void testSortingEquivalentFiles(){
-		System.out.println("\nSORTING");
+		System.out.println("SORTING");
 		filSorter = new FileLineSorter();
 		filSorter.addFileName("PruebaArchivoIgual1.txt");
 		filSorter.addFileName("PruebaArchivoIgual2.txt");

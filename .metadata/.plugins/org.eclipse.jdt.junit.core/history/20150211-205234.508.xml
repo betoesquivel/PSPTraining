@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="FileLineSorterTest" project="Programa 1" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="FileLineSorterTest" time="0.001">
-    <testcase name="testWhiteLineCounter" classname="FileLineSorterTest" time="0.0"/>
-    <testcase name="testSortingEquivalentFiles" classname="FileLineSorterTest" time="0.0"/>
-    <testcase name="testInfoLineCounter" classname="FileLineSorterTest" time="0.001"/>
-  </testsuite>
-</testrun>

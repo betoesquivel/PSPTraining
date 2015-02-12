@@ -7,7 +7,7 @@ Code/Started=@1423257471152
 Code/Time==166.0
 Compile/Completed=@1423626104097
 Design/Completed=@1423257468061
-Design/Defects Injected==7.0
+Design/Defects Injected==9.0
 Design/Started=@1423254187166
 Design/Time==119.0
 Estimated Time=480.0
@@ -20,6 +20,6 @@ Postmortem/Time==15.0
 Started=@1423173818027
 Test/Completed=@1423709686223
 Test/Defects Injected==1.0
-Test/Defects Removed==8.0
+Test/Defects Removed==10.0
 Test/Started=@1423626104097
 Test/Time==234.0

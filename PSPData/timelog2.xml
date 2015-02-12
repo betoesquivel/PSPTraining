@@ -1,20 +1,3 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <timeLogEntries>
-  <time id="18" path="/Non Project/PSP Training/Program 1/Test" start="@1423682932921" delta="38" comment="Ejecución de pruebas" flag="A" />
-  <time id="19" path="/Non Project/PSP Training/Program 1/Test" start="@1423695564312" delta="148" interrupt="31" comment="Ejecución de pruebas, y aquí empecé a resolver la mayor parte de los errores. Principalmente el de la línea en blanco. " flag="A" />
-  <time id="20" path="/Non Project/PSP Training/Program 1/Test" start="@1423707786000" delta="32" flag="A" />
-  <time id="21" path="/Non Project/PSP Training/Program 1/Postmortem" start="@1423709686227" delta="15" interrupt="4" flag="A" />
-  <time id="5" comment="Investigación de atributos de java" flag="M" />
-  <time id="6" comment="Investigación de archivos y su lectura" flag="M" />
-  <time id="7" comment="Investigación del método toString" flag="M" />
-  <time id="8" comment="Investigación de expresiones regulares" flag="M" />
-  <time id="9" comment="Más investigación de expresiones regulares." flag="M" />
-  <time id="10" comment="Diseño de UML" flag="M" />
-  <time id="11" comment="Diseño de casos de pruebas." flag="M" />
-  <time id="15" comment="Codificación de la lógica de la clase principal. " flag="M" />
-  <time id="12" comment="Codificación de la clase FileInfo" flag="M" />
-  <time id="13" comment="Codificación de la clase Parser" flag="M" />
-  <time id="14" comment="" flag="M" />
-  <time id="16" comment="Codificación de JUnit" flag="M" />
-  <time id="17" comment="Codificación de JUnit" flag="M" />
 </timeLogEntries>
