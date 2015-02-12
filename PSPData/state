@@ -12,8 +12,8 @@
         <node name="Design"/>
         <node name="Code"/>
         <node name="Compile"/>
-        <node name="Test" selected="true"/>
-        <node name="Postmortem"/>
+        <node name="Test"/>
+        <node name="Postmortem" selected="true"/>
       </node>
       <node name="Program 2" templateID="PSP1" dataFile="3.dat" defectLog="1.def">
         <node name="Planning" selected="true"/>
