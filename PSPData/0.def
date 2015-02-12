@@ -10,4 +10,6 @@
   <defect num="8" type="Function" inj="Code" rem="Test" ft="1.5" fd="" desc="Missing the printing of totals" date="@1423628019333" />
   <defect num="9" type="Function" inj="Design" rem="Test" ft="12.5" fd="" desc="Didn't design abnormal test cases involving file content. Doing that now. " date="@1423683186929" />
   <defect num="10" type="Function" inj="Code" rem="Test" ft="1.3" fd="" desc="Didn't encapsulate sorting of file objects." date="@1423685140566" />
+  <defect num="11" type="Function" inj="Code" rem="Test" ft="177.5" fd="" desc="I was reading one less whitespace line. If the last line in the file, has nothing, it counts the last end of line as the end of file. " date="@1423695607896" />
+  <defect num="12" type="Function" inj="Test" rem="Test" ft="0.9" fd="11" desc="Reading one less info line as well. Just used the same structure as in the whiteline pattern." date="@1423709575078" />
 </defectLog>

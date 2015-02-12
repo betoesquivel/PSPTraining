@@ -63,19 +63,20 @@ public class FileInfo implements ErrorMessages {
 			setbExisting(true);
 			try {
 				int iChar;
-				String content = null; 
+				String sContent = ""; 
+				// read the whole file
 				while ((iChar = bufFileReader.read()) != -1) {
-					if (getParFinder().isWhiteLine(sChar)) {
-						this.iWhiteLines += 1;
-					}else {
-						this.iInfoLines += 1;
-					}
-					this.iTotalLines += 1;
-					
-					/*
-					 *  Remember the last input. If it was a letter, 
-					 */
+					sContent += (char)iChar; 
 				}	
+
+				// Count the info lines
+				setiInfoLines(getParFinder().countInfoLines(sContent));
+				// Count the white lines
+				setiWhiteLines(getParFinder().countWhiteLines(sContent));
+				
+				// Set the total lines
+				setiTotalLines(getiWhiteLines() + getiInfoLines());
+				
 			} catch (IOException e) {
 				System.out.println(sIO_EXCEPTION);
 			}
