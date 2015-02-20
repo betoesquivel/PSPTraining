@@ -1,1 +1,70 @@
 #include <pspForEng3/psp1/dataFile.txt>
+= Data for /Non Project/PSP Training/Program 2
+Base_Parts/0/Added=50.0
+Base_Parts/0/Base=168.0
+Base_Parts/0/Deleted=20.0
+Base_Parts/0/Description="FileLineSorter
+Base_Parts/0/Modified=25.0
+Base_Parts/1/Added=100.0
+Base_Parts/1/Base=169.0
+Base_Parts/1/Deleted=0.0
+Base_Parts/1/Description="FileInfo
+Base_Parts/1/Modified=50.0
+Base_Parts/2/Added=78.0
+Base_Parts/2/Base=56.0
+Base_Parts/2/Deleted=0.0
+Base_Parts/2/Description="Parser
+Base_Parts/2/Modified=5.0
+Base_Parts/3/Added=2.0
+Base_Parts/3/Base=13.0
+Base_Parts/3/Deleted=0.0
+Base_Parts/3/Description="FileInfoComparator
+Base_Parts/3/Modified=13.0
+Base_Parts_List=="01234567
+Code/Defects Removed==9.0
+Code/Started=@1424466823168
+Code/Time==70.0
+Design/Completed=@1424063388841
+Design/Defects Injected==9.0
+Design/Started=@1424051947870
+Design/Time==102.0
+Estimated New & Changed LOC/Beta0=0.0
+Estimated New & Changed LOC/Beta1=1.0
+Estimated New & Changed LOC/Interval Percent="N/A
+Estimated New & Changed LOC/LPI="N/A
+Estimated New & Changed LOC/Probe Method="D
+Estimated New & Changed LOC/R Squared="N/A
+Estimated New & Changed LOC/Range="N/A
+Estimated New & Changed LOC/UPI="N/A
+Estimated New & Changed LOC=361.0
+Estimated Time/Beta0="N/A
+Estimated Time/Beta1="N/A
+Estimated Time/Interval Percent="N/A
+Estimated Time/LPI="N/A
+Estimated Time/Probe Method="D
+Estimated Time/R Squared="N/A
+Estimated Time/Range="N/A
+Estimated Time/UPI="N/A
+Estimated Time=480.0
+New Objects/0/Description="CodePart
+New Objects/0/LOC=53.0
+New Objects/0/Methods=6.0
+New Objects/0/Relative Size="Medium
+New Objects/0/Type="Data
+New Objects/1/LOC=5.1
+New Objects/1/Methods=0.0
+New Objects/1/New Reused?=0.0
+New Objects/1/Relative Size="Small
+New Objects/1/Type="Calculation
+New_Objects_List=="012345
+PROBE_LIST=="/Non Project/PSP Training/Program 1
+PROBE_Last_Run_Value/Estimated Added & Modified Size=361.0
+PROBE_Last_Run_Value/Estimated Proxy Size==361.0
+PROBE_Last_Run_Value/Estimated Time=480.0
+Planning/Completed=@1424051944816
+Planning/Started=@1423868655769
+Planning/Time==69.0
+Reused Objects/0/Description="ErrorMessages
+Reused Objects/0/LOC=12.0
+Reused_Objects_List=="0
+Started=@1423868655769

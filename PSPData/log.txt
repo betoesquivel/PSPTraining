@@ -1,9 +1,42 @@
-Process Dashboard - logging started at Fri Feb 13 14:11:44 GMT-06:00 2015
+Process Dashboard - logging started at Fri Feb 20 15:12:18 GMT-06:00 2015
 Apple Inc. JRE 1.6.0_65; Mac OS X
 Using LocalWorkingDirectory[/Users/betoesquivel/workspace/java/PSPTraining/PSPData]
-2015-02-13 14:11:44.823:INFO:oejs.Server:jetty-8.y.z-SNAPSHOT
-2015-02-13 14:11:44.846:INFO:oejs.AbstractConnector:Started LocalConnector@0.0.0.0:0
-2015-02-13 14:11:44.869:INFO:oejs.AbstractConnector:Started SelectChannelConnector@127.0.0.1:2468
-Feb 13, 2015 2:11:46 PM net.sourceforge.processdash.ProcessDashboard <init>
+2015-02-20 15:12:18.649:INFO:oejs.Server:jetty-8.y.z-SNAPSHOT
+2015-02-20 15:12:18.673:INFO:oejs.AbstractConnector:Started LocalConnector@0.0.0.0:0
+2015-02-20 15:12:18.694:INFO:oejs.AbstractConnector:Started SelectChannelConnector@127.0.0.1:2468
+Feb 20, 2015 3:12:19 PM net.sourceforge.processdash.ProcessDashboard <init>
 INFO: Process Dashboard version 2.1.5
-Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/2.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/3.dat

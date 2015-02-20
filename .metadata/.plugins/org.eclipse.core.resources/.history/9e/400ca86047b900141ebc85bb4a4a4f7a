@@ -1,0 +1,17 @@
+package mx.itesm.a01139626.p2.src;
+//&p-CodePart
+public class CodePart {
+	
+	private String sPartName;
+	private String sContent;
+	private String sType;
+	
+	private int iTotalLOC;
+	private int iItems;
+	private int iBase;
+	private int iRemoved;
+	private int iModified;
+	private int iAdded;
+	
+	
+}

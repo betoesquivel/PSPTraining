@@ -1,5 +1,4 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <timeLogEntries>
-  <time id="22" path="/Non Project/PSP Training/Program 1/Postmortem" start="@1423771967000" delta="17" interrupt="2" comment="Hice los cambios sugeridos por mi compañero." flag="A" />
-  <time id="23" path="/Non Project/PSP Training/Program 2/Planning" start="@1423868655769" delta="1" flag="A" />
+  <time id="29" path="/Non Project/PSP Training/Program 2/Code" start="@1424466823168" delta="71" flag="A" />
 </timeLogEntries>

@@ -1,0 +1,41 @@
+package mx.itesm.a01139626.p2.src;
+//&p-CodePart
+public class CodePart {
+	
+	private String sPartName;
+	private String sContent;
+	private String sType;
+	
+	private int iTotalLOC;
+	private int iItems;
+	private int iBase;
+	private int iRemoved;
+	private int iModified;
+	private int iAdded;
+	
+	/**
+	 * parsePart
+	 * 
+	 * Parses the string filling the information of this object.
+	 * The information is: (iTotalLOC, iItems, iBase, iRemoved, iModified, iAdded);
+	 * Based on the information gathered, it also sets the sType to one of these different 
+	 * values: ("ADDED", "BASE", "REUSED")
+	 * 
+	 * @return <code>boolean</code> which is true if the file was found, and
+	 *         false otherwise.
+	 * @exception Exception
+	 *                of type <code>FileNotFoundException</code> when file is
+	 *                not found.
+	 */
+	public void parsePart() {
+		
+	}
+	
+	public String toString() {
+		
+	}
+	
+	
+	
+	
+}

@@ -21,4 +21,11 @@
   <time id="19" path="/Non Project/PSP Training/Program 1/Test" start="@1423695564312" delta="148" interrupt="31" comment="Ejecución de pruebas, y aquí empecé a resolver la mayor parte de los errores. Principalmente el de la línea en blanco. " />
   <time id="20" path="/Non Project/PSP Training/Program 1/Test" start="@1423707786000" delta="32" />
   <time id="21" path="/Non Project/PSP Training/Program 1/Postmortem" start="@1423709686227" delta="15" interrupt="4" />
+  <time id="22" path="/Non Project/PSP Training/Program 1/Postmortem" start="@1423771967000" delta="17" interrupt="2" comment="Hice los cambios sugeridos por mi compañero." />
+  <time id="23" path="/Non Project/PSP Training/Program 2/Planning" start="@1423868655769" delta="20" />
+  <time id="24" path="/Non Project/PSP Training/Program 2/Planning" start="@1424047831791" delta="33" interrupt="5" />
+  <time id="25" path="/Non Project/PSP Training/Program 2/Planning" start="@1424050825479" delta="16" interrupt="2" />
+  <time id="26" path="/Non Project/PSP Training/Program 2/Design" start="@1424051947870" delta="20" interrupt="4" />
+  <time id="27" path="/Non Project/PSP Training/Program 2/Design" start="@1424053986514" delta="80" />
+  <time id="28" path="/Non Project/PSP Training/Program 2/Design" start="@1424063293865" delta="2" />
 </timeLogEntries>

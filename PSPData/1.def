@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<defectLog>
+  <defect num="1" type="Function" inj="Design" rem="Code" ft="15.8" fd="" desc="Forgot to add extra functions of the Parser in the design phase, therefore, I need to design them and declare them now in the coding phase. " count="9" date="@1424469624787" />
+</defectLog>
