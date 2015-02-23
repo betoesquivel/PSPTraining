@@ -1,0 +1,24 @@
+
+//&b
+// //&p-Parte en otros comentarios
+//&p-Parte1
+
+//&i
+//&b=3
+//&d=1
+info //&m
+info
+//&b=1
+info
+   info
+info
+info
+s = "//&m //&b //&p-NoEsParte //&i"
+
+// entonces tengo //&b=3 //&d=1 y //&m=1
+
+/*
+ Y luego tengo la parte2 como //&p-Parte2
+ que va a tener la misma info.
+*/
+

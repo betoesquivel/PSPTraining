@@ -1,0 +1,13 @@
+PARTES BASE:
+	FileLineSorter: T=130, I=19, B=99, D=28, M=4, A=59
+	FileInfo: T=108, I=16, B=73, D=16, M=1, A=51
+	Parser: T=126, I=17, B=41, D=0, M=1, A=85
+	FileInfoComparator: T=9, I=1, B=9, D=0, M=2, A=0
+--------------------------------------------
+PARTES NUEVAS:
+	CodePart: T=91, I=23
+--------------------------------------------
+PARTES REUSADAS:
+	ErrorMessages: T=10, I=0, B=10
+--------------------------------------------
+Total de LDC=480

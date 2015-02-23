@@ -1,5 +1,6 @@
 #include <pspForEng3/psp0/dataFile.txt>
 = Data for /Non Project/PSP Training/Program 1
+Added LOC=237.0
 Code/Completed=@1423626073706
 Code/Defects Injected==4.0
 Code/Defects Removed==4.0
@@ -23,3 +24,4 @@ Test/Defects Injected==1.0
 Test/Defects Removed==10.0
 Test/Started=@1423626104097
 Test/Time==234.0
+Total LOC=237.0

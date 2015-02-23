@@ -1,0 +1,39 @@
+
+//&p-Parte1
+
+//&i
+//&i
+//&b=3
+//&d=1
+info //&m
+info
+//&b=3
+info
+   info
+info
+info
+
+// entonces tengo //&b=3 //&d=1 y //&m=1
+
+/*
+ Y luego tengo la parte2 como //&p-Parte2
+ que va a tener la misma info.
+*/
+
+
+//&p-Parte2
+
+//&i
+//&b=3
+info
+info
+//&i
+//&i
+info
+
+// entonces tengo //&b=3 //&d=1 y //&m=1
+
+/*
+ Y luego tengo la parte2 como //&p-Parte2
+ que va a tener la misma info.
+*/
