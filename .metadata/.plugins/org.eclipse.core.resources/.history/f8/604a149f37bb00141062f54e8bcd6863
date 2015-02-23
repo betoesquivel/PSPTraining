@@ -1,22 +1,21 @@
-package mx.itesm.a01139626.p2.src;
-//&p-FileInfo
-//&b=?
+package mx.itesm.a01139626.p1.src;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-
+//&p-FileInfo
 public class FileInfo implements ErrorMessages {
 	private String sFileName;
-	//&d=2
-	private int iTotalLOC;//&m
+	private int iWhiteLines;
+	private int iInfoLines;
+	private int iTotalLines;
 	private BufferedReader bufFileReader;
 	private Parser parFinder; 
 	private boolean bExisting; 
-	private ArrayList<CodePart> codArrParts;
 
+	//&i
 	/**
 	 * FileInfo String constructor
 	 * 
@@ -33,8 +32,9 @@ public class FileInfo implements ErrorMessages {
 		setbExisting(false);
 		
 		// zero stat counters
-		//&d=2
-		setiTotalLOC(0);
+		setiWhiteLines(0);
+		setiInfoLines(0);
+		setiTotalLines(0);
 		
 		// initialize the parser, compiling the regexps
 		setParFinder(new Parser());
@@ -42,37 +42,9 @@ public class FileInfo implements ErrorMessages {
 		// null the file reader
 		this.bufFileReader = null;
 		
-		// create the array list
-		this.codArrParts = new ArrayList<CodePart>();
-		
 	}
 	
-	/**
-	 * createParts
-	 * 
-	 * Fills the ArrayList codArrParts with instances of the class CodePart
-	 * based on the info received as a parameter. 
-	 * 
-	 * @param parsed content that has no spaces, or comments, just tags
-	 */
-	public void createParts(String sContent) {
-		ArrayList<String> sArrPartsContent = new ArrayList<String>();
-		ArrayList<String> sArrPartsName = new ArrayList<String>();
-		
-		parFinder.splitIntoParts(sContent, sArrPartsContent, sArrPartsName);
-		
-		String sPartName;
-		String sPartContent;
-		for (int iIndex = 0; iIndex < sArrPartsName.size(); iIndex++){
-			sPartName = sArrPartsName.get(iIndex);
-			sPartContent = sArrPartsContent.get(iIndex);
-			// create the CodePart and add it to the array
-			CodePart codNew = new CodePart(sPartName, sPartContent);
-			
-		}
-		
-	}
-
+	//&i
 	/**
 	 * parseFile
 	 * 
@@ -98,25 +70,14 @@ public class FileInfo implements ErrorMessages {
 				while ((iChar = bufFileReader.read()) != -1) {
 					sContent += (char)iChar; 
 				}	
-				
-				// Remove comments, without deleting tags
-				sContent = parFinder.removeComments(sContent);
-				// Remove white lines
-				sContent = parFinder.removeWhiteLines(sContent);
-				// Remove single brackets 
-				sContent = parFinder.removeSingleBrackets(sContent);
-				// Replace strings "" with STRING
-				sContent = parFinder.replaceStringLiterals(sContent);
-				// Copy sContent to new variable that will be used to break content into parts
-				String tmpContent = sContent;
-				// Call method createParts with this new variable
-				createParts(tmpContent);
-				// Remove all tags
-				sContent = parFinder.removeTags(sContent);
-				// Count total lines of code
-				setiTotalLOC(parFinder.countInfoLines(sContent));
 
-				//&d=3
+				// Count the info lines
+				setiInfoLines(getParFinder().countInfoLines(sContent));
+				// Count the white lines
+				setiWhiteLines(getParFinder().countWhiteLines(sContent));
+				
+				// Set the total lines
+				setiTotalLines(getiWhiteLines() + getiInfoLines());
 				
 			} catch (IOException e) {
 				System.out.println(sIO_EXCEPTION);
@@ -132,7 +93,8 @@ public class FileInfo implements ErrorMessages {
 	}
 
 	
-	
+
+	//&i
 	/**
 	 * @return the sFileName
 	 */
@@ -142,6 +104,7 @@ public class FileInfo implements ErrorMessages {
 		
 	}
 
+	//&i
 	/**
 	 * @param sFileName the sFileName to set
 	 */
@@ -150,26 +113,68 @@ public class FileInfo implements ErrorMessages {
 		this.sFileName = sFileName;
 		
 	}
-	//&d=8
 
+	//&i
 	/**
-	 * @return the iTotalLOC
+	 * @return the iWhiteLines
 	 */
-	public int getiTotalLOC() {
+	public int getiWhiteLines() {
 		
-		return iTotalLOC;
+		return iWhiteLines;
 		
 	}
 
+	//&i
 	/**
-	 * @param iTotalLOC the iTotalLines to set
+	 * @param iWhiteLines the iWhiteLines to set
 	 */
-	public void setiTotalLOC(int iTotalLOC) {
+	public void setiWhiteLines(int iWhiteLines) {
 		
-		this.iTotalLOC = iTotalLOC;
+		this.iWhiteLines = iWhiteLines;
 		
 	}
 
+	//&i
+	/**
+	 * @return the iInfoLines
+	 */
+	public int getiInfoLines() {
+		
+		return iInfoLines;
+		
+	}
+
+	//&i
+	/**
+	 * @param iInfoLines the iInfoLines to set
+	 */
+	public void setiInfoLines(int iInfoLines) {
+		
+		this.iInfoLines = iInfoLines;
+		
+	}
+
+	//&i
+	/**
+	 * @return the iTotalLines
+	 */
+	public int getiTotalLines() {
+		
+		return iTotalLines;
+		
+	}
+
+	//&i
+	/**
+	 * @param iTotalLines the iTotalLines to set
+	 */
+	public void setiTotalLines(int iTotalLines) {
+		
+		this.iTotalLines = iTotalLines;
+		
+	}
+
+	//&i
 	/**
 	 * @return the parFinder
 	 */
@@ -179,6 +184,7 @@ public class FileInfo implements ErrorMessages {
 		
 	}
 
+	//&i
 	/**
 	 * @param parFinder the parFinder to set
 	 */
@@ -188,6 +194,7 @@ public class FileInfo implements ErrorMessages {
 		
 	}
 
+	//&i
 	/**
 	 * @return the bExisting
 	 */
@@ -195,6 +202,7 @@ public class FileInfo implements ErrorMessages {
 		return bExisting;
 	}
 
+	//&i
 	/**
 	 * @param bExisting the bExisting to set
 	 */
@@ -204,6 +212,7 @@ public class FileInfo implements ErrorMessages {
 		
 	}
 
+	//&i
 	/**
 	 * toString
 	 * 
@@ -217,13 +226,11 @@ public class FileInfo implements ErrorMessages {
 		String sRepresentation = "Nombre del archivo: %s\n"
 				+ "Cantidad de líneas en blanco: %d\n"
 				+ "Cantidad de líneas con información: %d";
-		//&d=1
+		
 		// Set string to file not found, or format output accordingly.
-		if (isbExisting()) {
-			sRepresentation = "Representation";
-		}else {
-			sRepresentation = "Not found";
-		}
+		sRepresentation = (isbExisting()) ? 
+			String.format(sRepresentation, getsFileName(), getiWhiteLines(), getiInfoLines()) : 
+			String.format("The file named %s, was not found.", getsFileName());
 		
 		return sRepresentation;
 		

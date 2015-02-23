@@ -1,7 +1,9 @@
 package mx.itesm.a01139626.p2.src;
 //&p-FileLineSorter
-//&b=?
+//&b=99
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
@@ -132,6 +134,7 @@ public class FileLineSorter implements ErrorMessages{
 				initCounters();
 				return false; 
 			}
+			filFile.parseParts();
 			this.iTotalInfoLines += filFile.getiTotalLOC();//&m
 		}
 		
@@ -145,7 +148,7 @@ public class FileLineSorter implements ErrorMessages{
 
 	//&i
 	//&d=13
-	public void printFiles(){
+	public void printFiles(PrintWriter priOut){
 		
 		// get all parts and total lines of code
 		ArrayList<CodePart> codArrAll = new ArrayList<CodePart>();
@@ -175,29 +178,32 @@ public class FileLineSorter implements ErrorMessages{
 		}
 		
 		// print all in order
-		System.out.println("PARTES BASE:");
+		priOut.println("PARTES BASE:");
 		for (CodePart codC : codArrBase) {
-			System.out.println("\t"+codC);
+			priOut.println("\t"+codC);
 		}
-		System.out.println("--------------------------------------------");
+		priOut.println("--------------------------------------------");
 		
-		System.out.println("PARTES NUEVAS:");
+		priOut.println("PARTES NUEVAS:");
 		for (CodePart codC : codArrAdded) {
-			System.out.println("\t"+codC);
+			priOut.println("\t"+codC);
 		}
-		System.out.println("--------------------------------------------");
+		priOut.println("--------------------------------------------");
 		
-		System.out.println("PARTES REUSADAS:");
+		priOut.println("PARTES REUSADAS:");
 		for (CodePart codC : codArrReused) {
-			System.out.println("\t"+codC);
+			priOut.println("\t"+codC);
 		}
-		System.out.println("--------------------------------------------");
+		priOut.println("--------------------------------------------");
 		
 		// print total LOC
-		String sFormat = "Total de LDC=&d";
-		System.out.println(String.format(sFormat, getiTotalInfoLines()));
+		String sFormat = "Total de LDC=%d";
+		priOut.println(String.format(sFormat, getiTotalInfoLines()));
 		
 	}
+	
+	//&i
+	//&d=13
 	
 
 	//&i
@@ -212,8 +218,9 @@ public class FileLineSorter implements ErrorMessages{
 	//&i
 	public static void main(String[] args) throws IOException{
 		BufferedReader bufIn = new BufferedReader(new InputStreamReader(System.in));
-		PrintWriter priWriter = new PrintWriter("ConteoLDC.txt");
-		PrintWriter priOut = new PrintWriter(System.out);
+		BufferedWriter bufWriter = new BufferedWriter( new FileWriter("ConteoLDC.txt"));
+		PrintWriter priWriter = new PrintWriter(bufWriter);
+		PrintWriter priOut = new PrintWriter(System.out, true);
 		
 		Parser parValidator = new Parser();
 		
@@ -226,7 +233,7 @@ public class FileLineSorter implements ErrorMessages{
 			if (sFileNumber != null) {
 				priOut.println(sINVALID_INTEGER);
 			}
-			priOut.println("Introduzca el numero de archivos a ordenar: ");//&m
+			priOut.println("Introduzca el numero de archivos a contar: ");//&m
 			sFileNumber = bufIn.readLine();
 		
 		} while (!parValidator.isNumeric(sFileNumber));
@@ -234,7 +241,7 @@ public class FileLineSorter implements ErrorMessages{
 		iFileNumber = Integer.parseInt(sFileNumber);
 		
 		// ask for file names separated by a new line with extension
-		priOut.println("Introduzca los nombres de los archivos a ordenar, separados por " + "un salto de linea. (ejemplo: Archivo1.txt)");
+		priOut.println("Introduzca los nombres de los archivos a contar, separados por " + "un salto de linea. (ejemplo: Archivo1.src)"); //&m
 		
 		// read number of files from input
 		int iCount = 0; 
@@ -243,7 +250,7 @@ public class FileLineSorter implements ErrorMessages{
 		
 		do {
 			if (sFName != null){
-				priOut.println (sINVALID_FILE_NAME);
+				priOut.println (sINVALID_FILE_NAME); //&m
 			}
 			iCount = 0;
 			bValid = true; 
@@ -264,12 +271,11 @@ public class FileLineSorter implements ErrorMessages{
 
 		// construct and parse all files in the file name arraylist
 		if (filSorter.parseFiles()){
-			// sort all files in FileInfo arraylist
-			filSorter.filArrFilesWithStats.sort(new FileInfoComparator());
-			// print all files in FileInfo arraylist
-			filSorter.printFiles();
-			// print totals
-			priOut.println(filSorter);
+			//&d=2
+			// print all files in FileInfo arraylist to console and to file
+			filSorter.printFiles(priOut);
+			filSorter.printFiles(priWriter);
+			priWriter.close();
 		}
 		
 		

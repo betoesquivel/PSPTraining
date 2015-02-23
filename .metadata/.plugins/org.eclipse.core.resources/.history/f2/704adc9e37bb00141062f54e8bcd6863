@@ -1,12 +1,10 @@
-package mx.itesm.a01139626.p2.src;
-//&p-FileLineSorter
-//&b=?
+package mx.itesm.a01139626.p1.src;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.PrintWriter;
 import java.util.ArrayList;
-
+//&p-FileLineSorter
 public class FileLineSorter implements ErrorMessages{
 
 	private ArrayList<String> sArrFileNames;
@@ -132,7 +130,8 @@ public class FileLineSorter implements ErrorMessages{
 				initCounters();
 				return false; 
 			}
-			this.iTotalInfoLines += filFile.getiTotalLOC();//&m
+			iTotalWhiteLines += filFile.getiWhiteLines();
+			iTotalInfoLines += filFile.getiInfoLines();
 		}
 		
 		return true; 
@@ -143,60 +142,13 @@ public class FileLineSorter implements ErrorMessages{
 		getFilArrFilesWithStats().sort(new FileInfoComparator());
 	}
 
-	//&i
-	//&d=13
+	//&i	
 	public void printFiles(){
 		
-		// get all parts and total lines of code
-		ArrayList<CodePart> codArrAll = new ArrayList<CodePart>();
-		for (FileInfo filF : getFilArrFilesWithStats()) {
-			
-			codArrAll.addAll(filF.getCodArrParts());
-			
+		for (FileInfo filFile : filArrFilesWithStats){
+			System.out.println(filFile);
+			System.out.println("--------------------------------------------");
 		}
-		
-		// separate parts in Added, Base, and Reused
-		ArrayList<CodePart> codArrAdded = new ArrayList<CodePart>();
-		ArrayList<CodePart> codArrBase = new ArrayList<CodePart>();
-		ArrayList<CodePart> codArrReused = new ArrayList<CodePart>();
-		
-		for (CodePart codC : codArrAll) {
-		
-			String sType = codC.getsType();
-			switch (sType) {
-			case "ADDED": codArrAdded.add(codC); 
-				break;
-			case "BASE":  codArrBase.add(codC);
-				break;
-			case "REUSED": codArrReused.add(codC);
-				break;
-			}
-			
-		}
-		
-		// print all in order
-		System.out.println("PARTES BASE:");
-		for (CodePart codC : codArrBase) {
-			System.out.println("\t"+codC);
-		}
-		System.out.println("--------------------------------------------");
-		
-		System.out.println("PARTES NUEVAS:");
-		for (CodePart codC : codArrAdded) {
-			System.out.println("\t"+codC);
-		}
-		System.out.println("--------------------------------------------");
-		
-		System.out.println("PARTES REUSADAS:");
-		for (CodePart codC : codArrReused) {
-			System.out.println("\t"+codC);
-		}
-		System.out.println("--------------------------------------------");
-		
-		// print total LOC
-		String sFormat = "Total de LDC=&d";
-		System.out.println(String.format(sFormat, getiTotalInfoLines()));
-		
 	}
 	
 
@@ -209,12 +161,9 @@ public class FileLineSorter implements ErrorMessages{
 		return String.format(format, this.iNumberOfFiles, this.iTotalWhiteLines, this.iTotalInfoLines);
 	}
 
-	//&i
+	//&i	
 	public static void main(String[] args) throws IOException{
 		BufferedReader bufIn = new BufferedReader(new InputStreamReader(System.in));
-		PrintWriter priWriter = new PrintWriter("ConteoLDC.txt");
-		PrintWriter priOut = new PrintWriter(System.out);
-		
 		Parser parValidator = new Parser();
 		
 		FileLineSorter filSorter = new FileLineSorter();
@@ -224,9 +173,9 @@ public class FileLineSorter implements ErrorMessages{
 		// ask for how many files are to be sorted
 		do {
 			if (sFileNumber != null) {
-				priOut.println(sINVALID_INTEGER);
+				System.out.println(sINVALID_INTEGER);
 			}
-			priOut.println("Introduzca el numero de archivos a ordenar: ");//&m
+			System.out.println("Introduzca el numero de archivos a ordenar: ");
 			sFileNumber = bufIn.readLine();
 		
 		} while (!parValidator.isNumeric(sFileNumber));
@@ -234,7 +183,8 @@ public class FileLineSorter implements ErrorMessages{
 		iFileNumber = Integer.parseInt(sFileNumber);
 		
 		// ask for file names separated by a new line with extension
-		priOut.println("Introduzca los nombres de los archivos a ordenar, separados por " + "un salto de linea. (ejemplo: Archivo1.txt)"); //&m
+		System.out.println("Introduzca los nombres de los archivos a ordenar, separados por "
+				+ "un salto de linea. (ejemplo: Archivo1.txt)");
 		
 		// read number of files from input
 		int iCount = 0; 
@@ -243,7 +193,7 @@ public class FileLineSorter implements ErrorMessages{
 		
 		do {
 			if (sFName != null){
-				priOut.println (sINVALID_FILE_NAME);
+				System.out.println (sINVALID_FILE_NAME);
 			}
 			iCount = 0;
 			bValid = true; 
@@ -269,7 +219,7 @@ public class FileLineSorter implements ErrorMessages{
 			// print all files in FileInfo arraylist
 			filSorter.printFiles();
 			// print totals
-			priOut.println(filSorter);
+			System.out.println(filSorter);
 		}
 		
 		

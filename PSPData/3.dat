@@ -69,15 +69,17 @@ Estimated Time/UPI="N/A
 Estimated Time=480.0
 New Objects/0/Actual LOC=91.0
 New Objects/0/Actual Methods=23.0
+New Objects/0/Actual New Reused?=1.0
 New Objects/0/Description="CodePart
 New Objects/0/LOC=53.0
 New Objects/0/Methods=6.0
+New Objects/0/New Reused?=1.0
 New Objects/0/Relative Size="Medium
 New Objects/0/Type="Data
-New Objects/1/Actual New Reused?=1.0
+New Objects/1/Actual New Reused?=0.0
 New Objects/1/LOC=5.1
 New Objects/1/Methods=0.0
-New Objects/1/New Reused?=1.0
+New Objects/1/New Reused?=0.0
 New Objects/1/Relative Size="Small
 New Objects/1/Type="Calculation
 New_Objects_List=="01
@@ -101,4 +103,4 @@ Test/Defects Injected==1.0
 Test/Defects Removed==9.0
 Test/Started=@1424662940383
 Test/Time==133.0
-Total LOC=470.0
+Total LOC=480.0

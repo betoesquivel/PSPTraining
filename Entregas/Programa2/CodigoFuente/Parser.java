@@ -1,6 +1,8 @@
 package mx.itesm.a01139626.p2.src;
 //&p-Parser
-//&b=?
+//&b=41
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -27,11 +29,11 @@ public class Parser implements ErrorMessages{
 	private String sInfoLine = "((\\A.*\\S.*\\z)|(\\A.*\\S.*)(?=(\\r?\\n))|(\\r?\\n)(.*\\S.*)(?=(\\r?\\n))|(\\r?\\n)(.*\\S.*)\\z)";
 	private String sWhiteLine = "((\\A[ \\t]+\\z)|(\\A[ \\t]+)(?=(\\r?\\n))|(\\r?\\n)([ \\t]*)(?=(\\r?\\n))|(\\r?\\n)([ \\t]*)\\z)";
 
-	private String sMultiComments  = "(/\\*.*\\*/)|(/\\*[^(\\*/)]*\\z)";
-	private String sSingleComments = "//[^&].*$"; // this has to be used with Pattern.MULTILINE
-	private String sSingleBracket  = "^[{}]$"; // this has to be used with Pattern.MULTILINE
-	private String sStringLiterals = "\".*\"";
-	private String sTags           = "//&((p-\\w+)|([bd]=\\d+)|([im]))";
+	private String sMultiComments  = "/\\*([^*]|(\\r?\\n)|(\\*+([^*/]|(\\r?\\n))))*\\*+/"; // this has to be used with Pattern.DOTALL
+	private String sSingleComments = "//([^&].*)?$"; // this has to be used with Pattern.MULTILINE
+	private String sSingleBracket  = "^([ \\t]*)[{}]([ \\t]*)$"; // this has to be used with Pattern.MULTILINE
+	private String sStringLiterals = "(\".*\")|('.*')";
+	private String sTags           = "//&[pbdmi].*";
 	private String sPTags          = "(//&p-)(\\w+)";
 	private String sBTags          = "(//&b=)(\\d+)";
 	private String sDTags          = "(//&d=)(\\d+)";
@@ -40,10 +42,11 @@ public class Parser implements ErrorMessages{
 	
 	private Matcher matMatcher; 
 	
+	//&i
 	public Parser(){
 		
 		// matches multi comments
-		this.patMultiComments = Pattern.compile(sMultiComments);
+		this.patMultiComments = Pattern.compile(sMultiComments, Pattern.DOTALL);
 		// matches single comments
 		this.patSingleComments = Pattern.compile(sSingleComments, Pattern.MULTILINE);
 		// matches single bracket
@@ -68,21 +71,27 @@ public class Parser implements ErrorMessages{
 		// matches lines with only spaces
 	    this.patWhiteLines = Pattern.compile(sWhiteLine);
 		// matches strings with only one file name with extension
-		this.patValidFileName = Pattern.compile("/?[a-zA-Z0-9_/]*\\.\\w+");
+		this.patValidFileName = Pattern.compile("/?[a-zA-Z0-9_/]*\\.\\w+"); //&m
 		// matches integers
 		this.patNumeric = Pattern.compile("\\d+");
 		
 	}
-	
-	public String[] splitIntoParts(String s, String [] sArrContents, String [] sArrNames){
-		sArrContents = this.patPTags.split(s);
+	//&i
+	public void splitIntoParts(String s, ArrayList<String> sArrContents, ArrayList<String> sArrNames){
+		
+		sArrContents.addAll(Arrays.asList(this.patPTags.split(s)));
+		
+		// remove first empty part resulting from the split
+		if (sArrContents.size() > 0)
+			sArrContents.remove(0);
+		
 		matMatcher = this.patPTags.matcher(s);
 		while(matMatcher.find()) {
-			
+			sArrNames.add (matMatcher.group(2));
 		}
-		return this.patPTags.split(s);
 		
 	}
+	//&i
 	public String removeComments(String s){
 		
 		// remove multi line comments
@@ -94,7 +103,7 @@ public class Parser implements ErrorMessages{
 		return parsed; 
 		
 	}
-	
+	//&i
 	public String removeWhiteLines(String s){
 
 		matMatcher = patWhiteLines.matcher(s);
@@ -102,7 +111,8 @@ public class Parser implements ErrorMessages{
 		return parsed;
 		
 	}
-	
+
+	//&i
 	public String removeSingleBrackets(String s){
 
 		matMatcher = patSingleBracket.matcher(s);
@@ -111,6 +121,7 @@ public class Parser implements ErrorMessages{
 		
 	}
 	
+	//&i
 	public String removeTags(String s){
 		
 		matMatcher = patTags.matcher(s);
@@ -119,6 +130,7 @@ public class Parser implements ErrorMessages{
 		
 	}
 	
+	//&i
 	public String replaceStringLiterals(String s){
 		
 		matMatcher = patStringLiterals.matcher(s);
@@ -127,6 +139,7 @@ public class Parser implements ErrorMessages{
 		
 	}
 	
+	//&i
 	public int sumBTags(String s){
 
 		matMatcher = patBTags.matcher(s);
@@ -139,6 +152,7 @@ public class Parser implements ErrorMessages{
 		
 	}
 	
+	//&i
 	public int sumDTags(String s){
 
 		matMatcher = patDTags.matcher(s);
@@ -151,6 +165,7 @@ public class Parser implements ErrorMessages{
 		
 	}
 	
+	//&i
 	public int countITags(String s){
 		
 		matMatcher = patITags.matcher(s);
@@ -162,6 +177,7 @@ public class Parser implements ErrorMessages{
 		
 	}
 	
+	//&i
 	public int countMTags(String s){
 
 		matMatcher = patMTags.matcher(s);
@@ -172,7 +188,8 @@ public class Parser implements ErrorMessages{
 		return iCount;
 		
 	}
-	
+
+	//&i
 	public boolean isWhiteLine(String s){
 	
 		matMatcher = patJustWhiteSpace.matcher(s);
@@ -180,7 +197,8 @@ public class Parser implements ErrorMessages{
 		return matMatcher.matches();
 		
 	}
-	
+
+	//&i
 	public boolean isInfoLine(String s){
 		
 		matMatcher = patInfoLines.matcher(s);
@@ -188,20 +206,24 @@ public class Parser implements ErrorMessages{
 		return matMatcher.find();
 		
 	}
-	
+
+	//&i
 	public boolean isValidFile(String s){
 		
 		matMatcher = patValidFileName.matcher(s);
 		
 		return matMatcher.matches();
 	}
+
+	//&i
 	public boolean isNumeric(String s){
 		
 		matMatcher = patNumeric.matcher(s);
 		
 		return matMatcher.matches();
 	}
-	
+
+	//&i
 	public int countInfoLines(String s){
 		matMatcher = patInfoLines.matcher(s);
 		int iCount = 0;
@@ -210,7 +232,8 @@ public class Parser implements ErrorMessages{
 		}
 		return iCount;
 	}
-	
+
+	//&i
 	public int countWhiteLines(String s){
 		matMatcher = patWhiteLines.matcher(s);
 		int iCount = 0;

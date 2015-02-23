@@ -1,6 +1,7 @@
+
 package mx.itesm.a01139626.p2.src;
 //&p-FileInfo
-//&b=?
+//&b=73
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -17,6 +18,8 @@ public class FileInfo implements ErrorMessages {
 	private boolean bExisting; 
 	private ArrayList<CodePart> codArrParts;
 
+
+	//&i
 	/**
 	 * FileInfo String constructor
 	 * 
@@ -46,7 +49,53 @@ public class FileInfo implements ErrorMessages {
 		this.codArrParts = new ArrayList<CodePart>();
 		
 	}
-	
+
+	//&i
+	/**
+	 * printParts
+	 * 
+	 * prints each CodePart in the class array
+	 * 
+	 */
+	public void printParts() {
+		
+		ArrayList<CodePart> codArrAdded = new ArrayList<CodePart>();
+		ArrayList<CodePart> codArrBase = new ArrayList<CodePart>();
+		ArrayList<CodePart> codArrReused = new ArrayList<CodePart>();
+		for (CodePart codC : this.codArrParts) {
+		
+			String sType = codC.getsType();
+			switch (sType) {
+			case "ADDED": codArrAdded.add(codC); 
+				break;
+			case "BASE":  codArrBase.add(codC);
+				break;
+			case "REUSED": codArrReused.add(codC);
+				break;
+			}
+			
+		}
+		
+		
+		
+	}
+
+	//&i
+	/**
+	 * parseParts
+	 * 
+	 * Calls the method parse on each CodePart in the array
+	 * 
+	 */
+	public void parseParts() {
+		
+		for (CodePart codC : this.codArrParts) {
+			codC.parsePart();
+		}
+		
+	}
+
+	//&i
 	/**
 	 * createParts
 	 * 
@@ -56,24 +105,38 @@ public class FileInfo implements ErrorMessages {
 	 * @param parsed content that has no spaces, or comments, just tags
 	 */
 	public void createParts(String sContent) {
+		
 		ArrayList<String> sArrPartsContent = new ArrayList<String>();
 		ArrayList<String> sArrPartsName = new ArrayList<String>();
 		
 		parFinder.splitIntoParts(sContent, sArrPartsContent, sArrPartsName);
-		
 		String sPartName;
 		String sPartContent;
-		for (int iIndex = 0; iIndex < sArrPartsName.size(); iIndex++){
-			sPartName = sArrPartsName.get(iIndex);
-			sPartContent = sArrPartsContent.get(iIndex);
-			// create the CodePart and add it to the array
-			CodePart codNew = new CodePart(sPartName, sPartContent);
-			this.codArrParts.add(codNew);
-			
+		if (sArrPartsContent.size() > 0){
+			for (int iIndex = 0; iIndex < sArrPartsName.size(); iIndex++){
+	
+				sPartName = sArrPartsName.get(iIndex);
+				sPartContent = sArrPartsContent.get(iIndex);
+				
+				// create the CodePart and add it to the array
+				CodePart codNew = new CodePart(sPartName, sPartContent);
+				this.codArrParts.add(codNew);
+				
+			}
+		} else {
+			if (sArrPartsName.size() > 0) {
+				sPartName = sArrPartsName.get(0);
+				sPartContent = "";
+				
+				// create the CodePart and add it to the array
+				CodePart codNew = new CodePart(sPartName, sPartContent);
+				this.codArrParts.add(codNew);
+			}
 		}
 		
 	}
 
+	//&i
 	/**
 	 * parseFile
 	 * 
@@ -99,7 +162,6 @@ public class FileInfo implements ErrorMessages {
 				while ((iChar = bufFileReader.read()) != -1) {
 					sContent += (char)iChar; 
 				}	
-				
 				// Remove comments, without deleting tags
 				sContent = parFinder.removeComments(sContent);
 				// Remove white lines
@@ -133,7 +195,8 @@ public class FileInfo implements ErrorMessages {
 	}
 
 	
-	
+
+	//&i
 	/**
 	 * @return the sFileName
 	 */
@@ -142,7 +205,8 @@ public class FileInfo implements ErrorMessages {
 		return sFileName;
 		
 	}
-
+	
+	//&i
 	/**
 	 * @param sFileName the sFileName to set
 	 */
@@ -153,6 +217,8 @@ public class FileInfo implements ErrorMessages {
 	}
 	//&d=8
 
+
+	//&i
 	/**
 	 * @return the iTotalLOC
 	 */
@@ -161,7 +227,8 @@ public class FileInfo implements ErrorMessages {
 		return iTotalLOC;
 		
 	}
-
+	
+	//&i
 	/**
 	 * @param iTotalLOC the iTotalLines to set
 	 */
@@ -171,6 +238,7 @@ public class FileInfo implements ErrorMessages {
 		
 	}
 
+	//&i
 	/**
 	 * @return the parFinder
 	 */
@@ -180,6 +248,7 @@ public class FileInfo implements ErrorMessages {
 		
 	}
 
+	//&i
 	/**
 	 * @param parFinder the parFinder to set
 	 */
@@ -189,6 +258,7 @@ public class FileInfo implements ErrorMessages {
 		
 	}
 
+	//&i
 	/**
 	 * @return the bExisting
 	 */
@@ -196,6 +266,7 @@ public class FileInfo implements ErrorMessages {
 		return bExisting;
 	}
 
+	//&i
 	/**
 	 * @param bExisting the bExisting to set
 	 */
@@ -205,6 +276,23 @@ public class FileInfo implements ErrorMessages {
 		
 	}
 
+	//&i
+	/**
+	 * @return the codArrParts
+	 */
+	public ArrayList<CodePart> getCodArrParts() {
+		return codArrParts;
+	}
+
+	//&i
+	/**
+	 * @param codArrParts the codArrParts to set
+	 */
+	public void setCodArrParts(ArrayList<CodePart> codArrParts) {
+		this.codArrParts = codArrParts;
+	}
+
+	//&i
 	/**
 	 * toString
 	 * 
