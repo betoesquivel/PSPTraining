@@ -46,7 +46,7 @@ Compile/Completed=@1424662937279
 Compile/Started=@1424662800377
 Compile/Time==2.0
 Design/Completed=@1424063388841
-Design/Defects Injected==25.0
+Design/Defects Injected==30.0
 Design/Started=@1424051947870
 Design/Time==102.0
 Estimated New & Changed LOC/Beta0=0.0
@@ -57,7 +57,7 @@ Estimated New & Changed LOC/Probe Method="D
 Estimated New & Changed LOC/R Squared="N/A
 Estimated New & Changed LOC/Range="N/A
 Estimated New & Changed LOC/UPI="N/A
-Estimated New & Changed LOC=381.1
+Estimated New & Changed LOC=376.0
 Estimated Time/Beta0="N/A
 Estimated Time/Beta1="N/A
 Estimated Time/Interval Percent="N/A
@@ -77,22 +77,19 @@ New Objects/0/New Reused?=1.0
 New Objects/0/Relative Size="Medium
 New Objects/0/Type="Data
 New Objects/1/Actual New Reused?=0.0
-New Objects/1/LOC=5.1
 New Objects/1/Methods=0.0
 New Objects/1/New Reused?=0.0
-New Objects/1/Relative Size="Small
-New Objects/1/Type="Calculation
 New_Objects_List=="01
 PROBE_LIST=="/Non Project/PSP Training/Program 1
-PROBE_Last_Run_Value/Estimated Added & Modified Size=381.1
-PROBE_Last_Run_Value/Estimated Proxy Size==381.1
+PROBE_Last_Run_Value/Estimated Added & Modified Size=376.0
+PROBE_Last_Run_Value/Estimated Proxy Size==376.0
 PROBE_Last_Run_Value/Estimated Time=480.0
-Planning/Completed=@1424673735051
+Planning/Completed=@1424814247117
 Planning/Started=@1423868655769
 Planning/Time==69.0
-Postmortem/Completed=@1424678904068
+Postmortem/Completed=@1424980620121
 Postmortem/Started=@1424670969420
-Postmortem/Time==40.0
+Postmortem/Time==57.0
 Reused Objects/0/Actual LOC=10.0
 Reused Objects/0/Description="ErrorMessages
 Reused Objects/0/LOC=12.0
@@ -100,7 +97,7 @@ Reused_Objects_List=="0
 Started=@1423868655769
 Test/Completed=@1424670949681
 Test/Defects Injected==1.0
-Test/Defects Removed==9.0
+Test/Defects Removed==14.0
 Test/Started=@1424662940383
 Test/Time==133.0
 Total LOC=480.0
