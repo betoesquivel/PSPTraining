@@ -1,1 +1,103 @@
 #include <pspForEng3/psp2/dataFile2.txt>
+= Data for /Non Project/PSP Training/Program 3
+Base_Parts/0/Actual Added=5.0
+Base_Parts/0/Actual Base=122.0
+Base_Parts/0/Actual Deleted=12.0
+Base_Parts/0/Added=10.0
+Base_Parts/0/Base=50.0
+Base_Parts/0/Deleted=0.0
+Base_Parts/0/Description="Parser
+Base_Parts/0/Modified=50.0
+Base_Parts/1/Actual Added=2.0
+Base_Parts/1/Actual Base=10.0
+Base_Parts/1/Actual Deleted=4.0
+Base_Parts/1/Actual Modified=2.0
+Base_Parts/1/Added=0.0
+Base_Parts/1/Base=0.0
+Base_Parts/1/Deleted=0.0
+Base_Parts/1/Description="ErrorMessages
+Base_Parts/1/Modified=0.0
+Base_Parts_List=="012345
+Code Review/Completed=@1425441148618
+Code Review/Defects Removed==2.0
+Code Review/Estimated Defects Removed=1.0
+Code Review/Estimated Time=85.0
+Code Review/Started=@1425433185066
+Code Review/Time==23.0
+Code/Completed=@1425433185051
+Code/Defects Injected==3.0
+Code/Started=@1425416985969
+Code/Time==77.0
+Compile/Completed=@1425441160608
+Design Review/Completed=@1425361571846
+Design Review/Defects Injected==0.0
+Design Review/Defects Removed==10.0
+Design Review/Estimated Defects Removed=7.0
+Design Review/Estimated Time=40.0
+Design Review/Started=@1425343075936
+Design Review/Time==58.0
+Design/Completed=@1425343073322
+Design/Defects Injected==12.0
+Design/Started=@1425248602771
+Design/Time==77.0
+Estimated New & Changed LOC/Beta0=0.0
+Estimated New & Changed LOC/Beta1=0.7632978723404256
+Estimated New & Changed LOC/Interval Percent="N/A
+Estimated New & Changed LOC/LPI="N/A
+Estimated New & Changed LOC/Probe Method="C
+Estimated New & Changed LOC/R Squared="N/A
+Estimated New & Changed LOC/Range="N/A
+Estimated New & Changed LOC/UPI="N/A
+Estimated New & Changed LOC=196.16755319148936
+Estimated Time/Beta0=0.0
+Estimated Time/Beta1=1.7420212765957446
+Estimated Time/Interval Percent="N/A
+Estimated Time/LPI="N/A
+Estimated Time/Probe Method="C1
+Estimated Time/R Squared="N/A
+Estimated Time/Range="N/A
+Estimated Time/UPI="N/A
+Estimated Time=447.69946808510633
+New Objects/0/Actual LOC=26.0
+New Objects/0/Actual Methods=7.0
+New Objects/0/Description="DataSetAnalyzer
+New Objects/0/LOC=33.8
+New Objects/0/Methods=3.0
+New Objects/0/Relative Size="Medium
+New Objects/0/Type="Calculation
+New Objects/1/Actual LOC=115.0
+New Objects/1/Actual Methods=32.0
+New Objects/1/Description="DataSet
+New Objects/1/LOC=98.6
+New Objects/1/Methods=4.0
+New Objects/1/Relative Size="Large
+New Objects/1/Type="Calculation
+New Objects/2/Actual LOC=52.0
+New Objects/2/Actual Methods=3.0
+New Objects/2/Actual New Reused?=1.0
+New Objects/2/Description="IOHandler
+New Objects/2/LOC=64.6
+New Objects/2/Methods=4.0
+New Objects/2/New Reused?=1.0
+New Objects/2/Relative Size="Medium
+New Objects/2/Type="I/O
+New_Objects_List=="012
+PROBE_LIST=="/Non Project/PSP Training/Program 1/Non Project/PSP Training/Program 2
+PROBE_Last_Run_Value/Estimated Added & Modified Size=196.16755319148936
+PROBE_Last_Run_Value/Estimated Proxy Size==257.0
+PROBE_Last_Run_Value/Estimated Time=447.69946808510633
+Planning/Completed=@1425241052336
+Planning/Started=@1424988043561
+Planning/Time==46.0
+Postmortem/Completed=@1425444434768
+Postmortem/Started=@1425441863234
+Postmortem/Time==41.0
+Reused Objects/0/Description="ErrorMessages
+Reused Objects/0/LOC=10.0
+Reused_Objects_List=="0
+Started=@1424988043561
+Test/Completed=@1425441863218
+Test/Defects Removed==3.0
+Test/Started=@1425441160608
+Test/Time==12.0
+Total LOC=333.0

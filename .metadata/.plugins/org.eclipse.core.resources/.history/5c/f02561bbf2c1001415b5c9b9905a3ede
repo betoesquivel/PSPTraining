@@ -1,0 +1,24 @@
+package mx.itesm.a01139626.p3.src;
+
+public class DataSetAnalyzer {
+	private String sFileName;
+	private DataSet datSet; 
+	
+	public DataSetAnalyzer() {
+		this.sFileName = "";
+		this.datSet = null;
+	}
+	
+	public void analyze() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		IOHandler iohIn = new IOHandler();
+		
+		this.sFileName = iohIn.readFileName();
+		
+	}
+
+}

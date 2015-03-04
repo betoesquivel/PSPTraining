@@ -1,0 +1,74 @@
+package mx.itesm.a01139626.p3.src;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class IOHandler implements ErrorMessages{
+	private Parser parParser;
+	
+	public IOHandler() {
+		
+		parParser = new Parser();
+		
+	}
+	
+	public String readFileName() {
+		return "";
+	}
+	
+	public boolean readDataSetFromFile(String sFName, DataSet datSet) {
+		BufferedReader bufInput; 
+		
+		try {
+			
+			bufInput = new BufferedReader( new FileReader ( new File(sFName) ) );
+			String sLine = "";
+			String sX, sY;
+			double dX, dY; 
+			
+			try {
+				
+				while ( ( sLine = bufInput.readLine() ) != null ) {
+					
+					// split line using the comma as separator
+					ArrayList<String> sArrPoints = new ArrayList( Arrays.asList( sLine.split(",") ) );
+					sX = sArrPoints.get(0);
+					sY = sArrPoints.get(1);
+					if ( parParser.isNumeric(sX) && parParser.isNumeric(sY) ) {
+				
+						dX = Double.parseDouble(sX);
+						dY = Double.parseDouble(sY);
+						datSet.addPair(dX, dY);
+						
+					}
+					
+				}
+				
+			} catch (NumberFormatException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				
+				System.out.println(sIO_EXCEPTION);
+				bufInput.close();
+				return false;
+				
+			}
+			
+			bufInput.close();
+			
+		} catch (FileNotFoundException e) {
+			
+			System.out.println(sFILE_NOT_FOUND);
+			return false;
+		}	
+		
+		return true;
+		
+	}
+}

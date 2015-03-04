@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<defectLog>
+  <defect num="1" type="Function" inj="Design" rem="Design Review" ft="3.4" fd="" desc="Did not design the main method, so I have to design it. " date="@1425343325304" />
+  <defect num="2" type="Function" inj="Design" rem="Design Review" ft="3.1" fd="" desc="Did not research how to round to the fifth digit. " date="@1425343772057" />
+  <defect num="3" type="Documentation" inj="Design" rem="Design Review" ft="12.7" fd="" desc="I did not code the jUnit tests for the DataSetAnalyzer class, which is the main class. " count="3" date="@1425357562479" />
+  <defect num="4" type="Function" inj="Design" rem="Design Review" ft="1.3" fd="" desc="My design said that with just one data pair I could calculate yk, but I actually need at least 2. So I will need to change my condition in calculate. " date="@1425358325417" />
+  <defect num="5" type="Documentation" inj="Design" rem="Design Review" ft="3.3" fd="" desc="Didn't make the test files in my computer. I spaced out, and forgot that. " count="3" date="@1425358413238" />
+  <defect num="6" type="Documentation" inj="Design" rem="Design Review" ft="23.6" fd="" desc="I did not pass the whole design to the computer because I thought I could do it by hand only. " date="@1425360150539" />
+  <defect num="7" type="Function" inj="Code" rem="Code Review" ft="0.8" fd="" desc="Regular expression to validate double numeric strings, was off, because it accepted more than one period. " date="@1425440170572" />
+  <defect num="8" type="Function" inj="Code" rem="Code Review" ft="7.5" fd="" desc="Didn't finish the toString method in the DataSet class, so I cannot meet the requirements for printing the files. " date="@1425440600481" />
+  <defect num="9" type="Function" inj="Design" rem="Test" ft="1.3" fd="" desc="the xk value should be printed with no decimal places according to the specification" date="@1425441381539" />
+  <defect num="10" type="Documentation" inj="Design" rem="Test" ft="1.0" fd="" desc="Calculated manually the correct values for my datosStrings.txt test, but then inserted the wrong value in the test. " date="@1425441623548" />
+  <defect num="11" type="Function" inj="Code" rem="Test" ft="2.2" fd="" desc="The error messages in calculate() method are not displaying when the dataset is less than 2 pairs. " date="@1425441690448" />
+</defectLog>

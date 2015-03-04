@@ -1,0 +1,30 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class DataSetAnalyzerTest {
+
+	@Test
+	public void test1DataPoint () {
+		DataSetAnalyzer datS = new DataSetAnalyzer();
+		datS.setSFName("Prueba.txt");
+		datS.analyze();
+		assertEquals(datS.getDatSet().getdYK(), 3);
+	}
+	@Test
+	public void testEmpty () {
+		DataSetAnalyzer datS = new DataSetAnalyzer();
+		datS.setSFName("Vacio.txt");
+		datS.analyze();
+		assertEquals(datS.getDatSet().getdYK(), 0);
+	}
+	@Test
+	public void testStringsInFile () {
+		DataSetAnalyzer datS = new DataSetAnalyzer();
+		datS.setSFName("datosStrings.txt");
+		datS.analyze();
+		assertEquals(datS.getDatSet().getdYK(), 2.5);
+	}
+
+}
