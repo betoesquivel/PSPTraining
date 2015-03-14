@@ -47,4 +47,15 @@
   <time id="45" path="/Non Project/PSP Training/Program 3/Design Review" start="@1425343075936" delta="16" />
   <time id="46" path="/Non Project/PSP Training/Program 3/Design Review" start="@1425357560692" delta="18" />
   <time id="47" path="/Non Project/PSP Training/Program 3/Design Review" start="@1425360143471" delta="24" />
+  <time id="48" path="/Non Project/PSP Training/Program 3/Code" start="@1425416985969" delta="72" interrupt="7" />
+  <time id="49" path="/Non Project/PSP Training/Program 3/Code" start="@1425422500257" delta="2" />
+  <time id="50" path="/Non Project/PSP Training/Program 3/Code" start="@1425432965210" delta="3" />
+  <time id="51" path="/Non Project/PSP Training/Program 3/Code Review" start="@1425433185066" delta="23" interrupt="109" />
+  <time id="52" path="/Non Project/PSP Training/Program 3/Test" start="@1425441160608" delta="12" />
+  <time id="53" path="/Non Project/PSP Training/Program 3/Postmortem" start="@1425441863234" delta="41" interrupt="1" />
+  <time id="54" path="/Non Project/PSP Training/Program 4/Planning" start="@1426195616996" delta="14" interrupt="4" />
+  <time id="55" path="/Non Project/PSP Training/Program 4/Planning" start="@1426197000214" delta="7" interrupt="3" />
+  <time id="56" path="/Non Project/PSP Training/Program 4/Planning" start="@1426197979943" delta="3" />
+  <time id="57" path="/Non Project/PSP Training/Program 4/Planning" start="@1426269231792" delta="9" />
+  <time id="58" path="/Non Project/PSP Training/Program 4/Planning" start="@1426270154904" delta="19" />
 </timeLogEntries>

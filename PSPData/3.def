@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<defectLog>
+  <defect num="1" type="Documentation" inj="Design" rem="Design Review" ft="13.3" fd="" desc="Did not code the JUnit test cases. Had to code them. " date="@1426286673647" />
+  <defect num="2" type="Function" inj="Design" rem="Design Review" ft="6.3" fd="" desc="Missing toString method in main class." date="@1426287632127" />
+  <defect num="3" type="Function" inj="Design" rem="Code" ft="0.5" fd="" desc="Didn't implement ErrorMessages interface in IOHandler." date="@1426289308235" />
+  <defect num="4" type="Function" inj="Code" rem="Test" ft="11.5" fd="" desc="Getting a different value for the normal test cases, because I was doing an integer division in the tStudent function." date="@1426313419444" />
+  <defect num="5" type="Function" inj="Code" rem="Test" ft="1.1" fd="" desc="I am missing the space after the equal sign when I print." count="2" date="@1426314116528" />
+  <defect num="6" type="Function" inj="Design" rem="Test" ft="0.9" fd="" desc="Only needed 3 spaces in the printing of toString, I added 4 so my representation didn't cope with the requirements." count="2" date="@1426314262603" />
+</defectLog>

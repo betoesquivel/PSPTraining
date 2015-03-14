@@ -1,0 +1,8 @@
+package mx.itesm.A01139626.src;
+//&p-ErrorMessages
+//&b=2
+public class ErrorMessages {
+	public final String sINVALID_INTEGER = "Favor de introducir solamente valores enteros mayores a 0."; //&m
+	
+	public final String sINVALID_DOUBLE = "Favor de introducir solamente valores numéricos reales mayores o iguales a 0."; //&m
+}

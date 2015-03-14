@@ -1,0 +1,8 @@
+package mx.itesm.A01139626.src;
+//&p-ErrorMessages
+//&b=2
+public class ErrorMessages {
+	public final String sINVALID_INTEGER = "El valor no es numerico. Intente de nuevo."; //&m
+	
+	public final String sINVALID_DOUBLE = "Uno de los valores del archivo no es numérico."; //&m
+}
