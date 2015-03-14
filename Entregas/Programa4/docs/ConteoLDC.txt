@@ -1,0 +1,10 @@
+PARTES BASE:
+	ErrorMessages: T=4, I=0, B=2, D=0, M=2, A=2
+	IOHandler: T=22, I=2, B=5, D=0, M=2, A=17
+--------------------------------------------
+PARTES NUEVAS:
+	AreaUnderTDistribution: T=68, I=14
+--------------------------------------------
+PARTES REUSADAS:
+--------------------------------------------
+Total de LDC=103

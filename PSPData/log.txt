@@ -133,3 +133,20 @@ Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/5.dat
 Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/5.dat
 Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/5.dat
 Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/5.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/5.dat
+Mar 14, 2015 1:11:48 AM net.sourceforge.processdash.ProcessDashboard quit
+INFO: Successfully saved all data.
+2015-03-14 01:11:48.090:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-03-14 01:11:48.091:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/Users/betoesquivel/Applications/ProcessDashboard/dashHelp.jar!/Templates/}
+2015-03-14 01:11:48.092:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-03-14 01:11:48.092:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/Users/betoesquivel/Applications/ProcessDashboard/extras.jar!/Templates/}
+2015-03-14 01:11:48.092:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-03-14 01:11:48.092:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/Users/betoesquivel/Applications/ProcessDashboard/importPSP.jar!/Templates/}
+2015-03-14 01:11:48.093:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-03-14 01:11:48.093:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/Users/betoesquivel/Applications/ProcessDashboard/l10nTool.jar!/Templates/}
+2015-03-14 01:11:48.093:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-03-14 01:11:48.093:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/Users/betoesquivel/Applications/ProcessDashboard/pspForEng.jar!/Templates/}
+2015-03-14 01:11:48.094:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-03-14 01:11:48.094:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/Users/betoesquivel/Applications/ProcessDashboard/pspProc2.jar!/Templates/}
+2015-03-14 01:11:48.094:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2015-03-14 01:11:48.094:INFO:oejsh.ContextHandler:stopped n.s.p.n.h.WebAppContextLegacy{,jar:file:/Users/betoesquivel/Applications/ProcessDashboard/pspdash.jar!/Templates/}
