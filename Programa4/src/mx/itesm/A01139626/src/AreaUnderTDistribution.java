@@ -84,7 +84,7 @@ public class AreaUnderTDistribution implements ErrorMessages {
 	public String toString() {
 		
 		String sFormat;
-		sFormat = "x   = %.5f\ndof = %d\np   = %.5f";
+		sFormat = "x   = %f\ndof = %d\np   = %f";
 		return String.format(sFormat, getdX(), getiDof(), getdP());
 		
 	}
@@ -198,15 +198,16 @@ public class AreaUnderTDistribution implements ErrorMessages {
 		AreaUnderTDistribution areCalculator = new AreaUnderTDistribution();
 		IOHandler ioHandler = new IOHandler(); 
 		
-		String sX = ioHandler.readValue("Introduce el valor límite de integración x: (debe de ser numérico y mayor o igual a 0)", sINVALID_REAL_NUMBER, Pattern.compile("(\\d+(\\.\\d+)?)"));
-		areCalculator.setdX( Double.parseDouble(sX) );
-
-		String sDof = ioHandler.readValue("Introduce el valor de los grados de libertad dof: (debe de ser numérico entero y mayor a 0)", sINVALID_INTEGER, Pattern.compile("\\d*[1-9]\\d*"));
-		areCalculator.setiDof( Integer.parseInt(sDof) );
-		
-		areCalculator.calculate();
-		System.out.println(areCalculator);
-		
+		while (true){
+			String sX = ioHandler.readValue("Introduce el valor límite de integración x: (debe de ser numérico y mayor o igual a 0)", sINVALID_REAL_NUMBER, Pattern.compile("(\\d+(\\.\\d+)?)"));
+			areCalculator.setdX( Double.parseDouble(sX) );
+	
+			String sDof = ioHandler.readValue("Introduce el valor de los grados de libertad dof: (debe de ser numérico entero y mayor a 0)", sINVALID_INTEGER, Pattern.compile("\\d*[1-9]\\d*"));
+			areCalculator.setiDof( Integer.parseInt(sDof) );
+			
+			areCalculator.calculate();
+			System.out.println(areCalculator);
+		}
 	}
 
 }

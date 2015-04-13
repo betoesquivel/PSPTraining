@@ -1,10 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <timeLogEntries>
-  <time id="59" path="/Non Project/PSP Training/Program 4/Design" start="@1426277368367" delta="18" flag="A" />
-  <time id="60" path="/Non Project/PSP Training/Program 4/Design" start="@1426278826085" delta="111" interrupt="3" flag="A" />
-  <time id="61" path="/Non Project/PSP Training/Program 4/Design Review" start="@1426285825654" delta="31" interrupt="7" flag="A" />
-  <time id="62" path="/Non Project/PSP Training/Program 4/Code" start="@1426288226500" delta="50" flag="A" />
-  <time id="63" path="/Non Project/PSP Training/Program 4/Code Review" start="@1426312922455" delta="6" flag="A" />
-  <time id="64" path="/Non Project/PSP Training/Program 4/Test" start="@1426313286956" delta="19" flag="A" />
-  <time id="65" path="/Non Project/PSP Training/Program 4/Postmortem" start="@1426314409203" delta="18" flag="A" />
+  <time id="80" path="/Non Project/PSP Training/Program 5/Postmortem" start="@1428875175705" delta="30" comment="Olvidé hacer las tablas de ejecución y ya no sabía dónde poner el tiempo que me tomó hacerlas al final, así que lo puse en postmortem." flag="A" />
+  <time id="81" path="/Non Project/PSP Training/Program 5/Postmortem" start="@1428898535811" delta="4" comment="Olvidé hacer las tablas de ejecución y ya no sabía dónde poner el tiempo que me tomó hacerlas al final, así que lo puse en postmortem." flag="A" />
 </timeLogEntries>

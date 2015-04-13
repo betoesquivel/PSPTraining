@@ -79,8 +79,9 @@ New Objects/2/Relative Size="Small
 New Objects/2/Type="Calculation
 New Objects/3/Actual LOC=68.0
 New Objects/3/Actual Methods=14.0
+New Objects/3/Actual New Reused?=1.0
 New Objects/3/Description="AreaUnderTDistribution
-New_Objects_List=="01234567
+New_Objects_List=="0123
 PROBE_LIST=="/Non Project/PSP Training/Program 1/Non Project/PSP Training/Program 2/Non Project/PSP Training/Program 3
 PROBE_Last_Run_Value/Estimated Added & Modified Size=182.53114741906245
 PROBE_Last_Run_Value/Estimated Proxy Size==206.4
@@ -90,7 +91,7 @@ Planning/Started=@1426195616996
 Planning/Time==52.0
 Postmortem/Completed=@1426315481305
 Postmortem/Started=@1426314409203
-Postmortem/Time==18.0
+Postmortem/Time==55.0
 Reused_Objects_List=="0
 Started=@1426195616996
 Test/Completed=@1426314409187

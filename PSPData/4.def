@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<defectLog>
+  <defect num="1" type="Documentation" inj="Design" rem="Design Review" ft="9.3" fd="" desc="I documented two scenarios in one in the operational specification. This might make the documentation ambiguous for any programmer to code it. " date="@1428164471565" />
+  <defect num="2" type="Function" inj="Design" rem="Test" ft="6.9" fd="" desc="The program was giving a 4.60410 instead of 4.60409 for the value of dX in the last normal test case, because I was missing a 0 in my error value according to the example explanations." date="@1428168039207" />
+</defectLog>

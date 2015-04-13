@@ -1,1 +1,72 @@
 #include <pspForEng3/psp2.1/dataFile2.txt>
+= Data for /Non Project/PSP Training/Program 5
+Base_Parts/0/Actual Added=1.0
+Base_Parts/0/Actual Base=4.0
+Base_Parts/0/Actual Modified=1.0
+Base_Parts/0/Added=0.0
+Base_Parts/0/Base=4.0
+Base_Parts/0/Description="ErrorMessages
+Base_Parts/0/Modified=2.0
+Base_Parts/1/Actual Added=13.0
+Base_Parts/1/Actual Base=68.0
+Base_Parts/1/Actual Deleted=0.0
+Base_Parts/1/Actual Modified=9.0
+Base_Parts/1/Added=30.0
+Base_Parts/1/Base=68.0
+Base_Parts/1/Deleted=10.0
+Base_Parts/1/Description="AreaUnderTDistribution
+Base_Parts_List=="0123456
+Code Review/Completed=@1428167918890
+Code Review/Started=@1428167573746
+Code Review/Time==6.0
+Code/Completed=@1428167429238
+Code/Started=@1428166077933
+Code/Time==22.0
+Compile/Completed=@1428167932133
+Design Review/Completed=@1428166077917
+Design Review/Defects Removed==1.0
+Design Review/Started=@1428164136835
+Design Review/Time==32.0
+Design/Completed=@1428164133264
+Design/Defects Injected==2.0
+Design/Started=@1427494685861
+Design/Time==62.0
+Estimated New & Changed LOC/Beta0=0.0
+Estimated New & Changed LOC/Beta1=0.802969449277898
+Estimated New & Changed LOC/Interval Percent="N/A
+Estimated New & Changed LOC/LPI="N/A
+Estimated New & Changed LOC/Probe Method="C
+Estimated New & Changed LOC/R Squared="N/A
+Estimated New & Changed LOC/Range="N/A
+Estimated New & Changed LOC/UPI="N/A
+Estimated New & Changed LOC=25.695022376892737
+Estimated Time/Beta0=18.70861195259387
+Estimated Time/Beta1=1.6892491839602268
+Estimated Time/Interval Percent=0.7
+Estimated Time/LPI=0.0
+Estimated Time/Probe Method="B
+Estimated Time/R Squared=0.9927859033132062
+Estimated Time/Range=79.58474854924664
+Estimated Time/UPI=152.34933438856777
+Estimated Time=72.76458583932113
+New_Objects_List=="0
+PROBE_LIST=="/Non Project/PSP Training/Program 1/Non Project/PSP Training/Program 2/Non Project/PSP Training/Program 3/Non Project/PSP Training/Program 4
+PROBE_Last_Run_Value/Estimated Added & Modified Size=25.695022376892737
+PROBE_Last_Run_Value/Estimated Proxy Size==32.0
+PROBE_Last_Run_Value/Estimated Time=72.76458583932113
+Planning/Completed=@1427494685856
+Planning/Started=@1427493274762
+Planning/Time==19.0
+Postmortem/Completed=@1428170021631
+Postmortem/Started=@1428168756790
+Postmortem/Time==47.0
+Reused Objects/0/Actual LOC=22.0
+Reused Objects/0/Description="IOHandler
+Reused Objects/0/LOC=22.0
+Reused_Objects_List=="0
+Started=@1427493274762
+Test/Completed=@1428168481552
+Test/Defects Removed==1.0
+Test/Started=@1428167932133
+Test/Time==8.0
+Total LOC=117.0
