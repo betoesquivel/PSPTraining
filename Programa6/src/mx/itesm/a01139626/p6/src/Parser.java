@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 //&p-Parser
-//&b=122
+//&b=115
 public class Parser implements ErrorMessages{
 	private Pattern patInfoLines; 
 	private Pattern patWhiteLines;
@@ -46,7 +46,6 @@ public class Parser implements ErrorMessages{
 	//&i
 	public Parser(){
 		
-		//&d=12
 		
 		// matches strings with only one file name with extension
 		this.patValidFileName = Pattern.compile("/?[a-zA-Z0-9_/]*\\.\\w+"); 

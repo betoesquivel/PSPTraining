@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 //&p-IOHandler
+//&b=52
 public class IOHandler implements ErrorMessages{
 	private Parser parParser;
 	private BufferedReader bufInput; 
@@ -56,15 +57,18 @@ public class IOHandler implements ErrorMessages{
 			
 			try {
 				
-				sX = bufInput.readLine();
+				sX = bufInput.readLine().trim();
 				if (sX != null) { 
-					sX = sX.trim();
+					
 					// falta parsear sX y agregarlo a xXK... por ende me falta poner los setters y getters de la clase. 
 					if ( parParser.isDouble(sX) ) {
 				
 						dX = Double.parseDouble(sX);
 						datSet.setdXK(dX);
 						
+					}else {
+						System.out.println(sINVALID_DOUBLE);
+						return false; 
 					}
 				
 					while ( ( sLine = bufInput.readLine() ) != null ) {
@@ -79,6 +83,9 @@ public class IOHandler implements ErrorMessages{
 							dY = Double.parseDouble(sY);
 							datSet.addPair(dX, dY);
 							
+						}else {
+							System.out.println(sINVALID_DOUBLE);
+							return false;
 						}
 						
 					}

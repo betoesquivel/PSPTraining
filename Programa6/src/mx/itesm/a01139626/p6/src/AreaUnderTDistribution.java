@@ -2,7 +2,7 @@ package mx.itesm.a01139626.p6.src;
 
 import java.util.regex.Pattern;
 //&p-AreaUnderTDistribution
-//&b=68
+//&b=81
 public class AreaUnderTDistribution implements ErrorMessages {
 	private double dX;
 	private int iDof;
@@ -22,7 +22,7 @@ public class AreaUnderTDistribution implements ErrorMessages {
 	 * @param dX
 	 * @param iDof
 	 */
-	public AreaUnderTDistribution(double dX, int iDof, double dP) { //&m
+	public AreaUnderTDistribution(double dX, int iDof, double dP) { 
 		super();
 		this.dX = dX;
 		this.iDof = iDof;
@@ -86,8 +86,8 @@ public class AreaUnderTDistribution implements ErrorMessages {
 	public String toString() {
 		
 		String sFormat;
-		sFormat = "p   = %.5f\ndof = %d\nx   = %.5f"; //&m
-		return String.format(sFormat, getdP(), getiDof(), getdX()); //&m
+		sFormat = "p   = %.5f\ndof = %d\nx   = %.5f"; 
+		return String.format(sFormat, getdP(), getiDof(), getdX()); 
 		
 	}
 	

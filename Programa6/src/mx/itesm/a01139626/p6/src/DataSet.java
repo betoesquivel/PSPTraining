@@ -1,5 +1,6 @@
 package mx.itesm.a01139626.p6.src;
 //&p-DataSet
+//&b=115
 public class DataSet implements ErrorMessages {
 	private double dXK;
 	private double dSumX;
