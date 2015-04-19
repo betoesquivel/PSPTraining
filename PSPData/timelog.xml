@@ -78,4 +78,6 @@
   <time id="77" path="/Non Project/PSP Training/Program 5/Test" start="@1428167932000" delta="8" />
   <time id="78" path="/Non Project/PSP Training/Program 5/Postmortem" start="@1428168756790" delta="10" />
   <time id="79" path="/Non Project/PSP Training/Program 5/Postmortem" start="@1428169827538" delta="3" />
+  <time id="80" path="/Non Project/PSP Training/Program 5/Postmortem" start="@1428875175705" delta="30" comment="Olvidé hacer las tablas de ejecución y ya no sabía dónde poner el tiempo que me tomó hacerlas al final, así que lo puse en postmortem." />
+  <time id="81" path="/Non Project/PSP Training/Program 5/Postmortem" start="@1428898535811" delta="4" comment="Olvidé hacer las tablas de ejecución y ya no sabía dónde poner el tiempo que me tomó hacerlas al final, así que lo puse en postmortem." />
 </timeLogEntries>

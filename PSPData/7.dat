@@ -1,1 +1,48 @@
 #include <pspForEng3/psp2.1/dataFile2.txt>
+= Data for /Non Project/PSP Training/Program 6
+Base_Parts/0/Added=3.0
+Base_Parts/0/Base=74.0
+Base_Parts/0/Deleted=14.0
+Base_Parts/0/Description="IOHandler
+Base_Parts/1/Added=70.0
+Base_Parts/1/Base=115.0
+Base_Parts/1/Description="DataSet
+Base_Parts/2/Added=5.0
+Base_Parts/2/Base=26.0
+Base_Parts/2/Description="DataSetAnalyzer
+Base_Parts/2/Modified=10.0
+Base_Parts_List=="012
+Design/Started=@1429471865909
+Design/Time==124.0
+Estimated New & Changed LOC/Beta0=-6.38928754447204
+Estimated New & Changed LOC/Beta1=0.7626315700916779
+Estimated New & Changed LOC/Interval Percent=0.7
+Estimated New & Changed LOC/LPI=0.0
+Estimated New & Changed LOC/Probe Method="A
+Estimated New & Changed LOC/R Squared=0.9050450371451679
+Estimated New & Changed LOC/Range=73.99107765405174
+Estimated New & Changed LOC/UPI=134.71336827764736
+Estimated New & Changed LOC=60.72229062359561
+Estimated Time/Beta0=0.0
+Estimated Time/Beta1=1.9567046159141994
+Estimated Time/Interval Percent="N/A
+Estimated Time/LPI="N/A
+Estimated Time/Probe Method="C2
+Estimated Time/R Squared="N/A
+Estimated Time/Range="N/A
+Estimated Time/UPI="N/A
+Estimated Time=172.19000620044957
+New_Objects_List=="0
+PROBE_LIST=="/Non Project/PSP Training/Program 1/Non Project/PSP Training/Program 2/Non Project/PSP Training/Program 3/Non Project/PSP Training/Program 4/Non Project/PSP Training/Program 5
+PROBE_Last_Run_Value/Estimated Added & Modified Size=60.72229062359561
+PROBE_Last_Run_Value/Estimated Proxy Size==88.0
+PROBE_Last_Run_Value/Estimated Time=172.19000620044957
+Planning/Completed=@1429321585958
+Planning/Started=@1429319516563
+Planning/Time==34.0
+Reused Objects/0/Description="ErrorMessages
+Reused Objects/0/LOC=8.0
+Reused Objects/1/Description="AreaUnderTDistribution
+Reused Objects/1/LOC=81.0
+Reused_Objects_List=="01
+Started=@1429319516563

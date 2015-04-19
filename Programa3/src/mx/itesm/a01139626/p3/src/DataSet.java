@@ -10,7 +10,7 @@ public class DataSet implements ErrorMessages {
 	private int iN;
 	private double dXAvg;
 	private double dYAvg;
-	private double dR; 
+	private double dR;
 	private double dR2;
 	private double dB0;
 	private double dB1;
@@ -55,7 +55,7 @@ public class DataSet implements ErrorMessages {
 		dSumXY += dX * dY;
 		dSumX2 += Math.pow(dX, 2);
 		dSumY2 += Math.pow(dY, 2);
-		iN += 1; 
+		iN += 1;
 	}
 
 	//&i

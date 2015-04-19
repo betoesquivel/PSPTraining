@@ -1,26 +1,132 @@
-Process Dashboard - logging started at Sun Apr 12 15:46:08 GMT-06:00 2015
+Process Dashboard - logging started at Fri Apr 17 19:11:46 GMT-06:00 2015
 Apple Inc. JRE 1.6.0_65; Mac OS X
 Using LocalWorkingDirectory[/Users/betoesquivel/workspace/java/PSPTraining/PSPData]
-2015-04-12 15:46:08.595:INFO:oejs.Server:jetty-8.y.z-SNAPSHOT
-2015-04-12 15:46:08.619:INFO:oejs.AbstractConnector:Started LocalConnector@0.0.0.0:0
-2015-04-12 15:46:08.642:INFO:oejs.AbstractConnector:Started SelectChannelConnector@127.0.0.1:2468
-Apr 12, 2015 3:46:09 PM net.sourceforge.processdash.ProcessDashboard <init>
+2015-04-17 19:11:46.254:INFO:oejs.Server:jetty-8.y.z-SNAPSHOT
+2015-04-17 19:11:46.276:INFO:oejs.AbstractConnector:Started LocalConnector@0.0.0.0:0
+2015-04-17 19:11:46.296:INFO:oejs.AbstractConnector:Started SelectChannelConnector@127.0.0.1:2468
+Apr 17, 2015 7:11:47 PM net.sourceforge.processdash.ProcessDashboard <init>
 INFO: Process Dashboard version 2.1.5
-Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/6.dat
-Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/6.dat
-Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/6.dat
-Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/6.dat
-Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/6.dat
-Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/6.dat
-Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/6.dat
-Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/6.dat
-Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/6.dat
-Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/6.dat
-Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/6.dat
-Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/6.dat
-Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/6.dat
-Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/6.dat
-Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/6.dat
-Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/6.dat
-Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/6.dat
-Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/6.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Unexpected error in FileBackupManager; ignoring most recent backup
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:145)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:308)
+	at java.io.FilterInputStream.read(FilterInputStream.java:116)
+	at java.io.FilterInputStream.read(FilterInputStream.java:116)
+	at java.io.PushbackInputStream.read(PushbackInputStream.java:169)
+	at java.util.zip.ZipInputStream.readFully(ZipInputStream.java:407)
+	at java.util.zip.ZipInputStream.readLOC(ZipInputStream.java:238)
+	at java.util.zip.ZipInputStream.getNextEntry(ZipInputStream.java:82)
+	at net.sourceforge.processdash.util.IncrementalDirectoryBackup.backupFiles(IncrementalDirectoryBackup.java:188)
+	at net.sourceforge.processdash.util.IncrementalDirectoryBackup.doBackup(IncrementalDirectoryBackup.java:111)
+	at net.sourceforge.processdash.util.DirectoryBackup.backup(DirectoryBackup.java:110)
+	at net.sourceforge.processdash.tool.bridge.client.AbstractWorkingDirectory.doBackupImpl(AbstractWorkingDirectory.java:106)
+	at net.sourceforge.processdash.tool.bridge.client.LocalWorkingDirectory.doBackup(LocalWorkingDirectory.java:112)
+	at net.sourceforge.processdash.FileBackupManager.runImpl(FileBackupManager.java:141)
+	at net.sourceforge.processdash.FileBackupManager.maybeRun(FileBackupManager.java:105)
+	at net.sourceforge.processdash.FileBackupManager$BGTask.run(FileBackupManager.java:305)
+	at net.sourceforge.processdash.BackgroundTaskManager$BackgroundTask.run(BackgroundTaskManager.java:313)
+	at net.sourceforge.processdash.BackgroundTaskManager$BackgroundTaskExecutor.run(BackgroundTaskManager.java:437)
+Unexpected error in FileBackupManager; ignoring most recent backup
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:145)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:308)
+	at java.io.FilterInputStream.read(FilterInputStream.java:116)
+	at java.io.FilterInputStream.read(FilterInputStream.java:116)
+	at java.io.PushbackInputStream.read(PushbackInputStream.java:169)
+	at java.util.zip.ZipInputStream.readFully(ZipInputStream.java:407)
+	at java.util.zip.ZipInputStream.readLOC(ZipInputStream.java:238)
+	at java.util.zip.ZipInputStream.getNextEntry(ZipInputStream.java:82)
+	at net.sourceforge.processdash.util.IncrementalDirectoryBackup.backupFiles(IncrementalDirectoryBackup.java:188)
+	at net.sourceforge.processdash.util.IncrementalDirectoryBackup.doBackup(IncrementalDirectoryBackup.java:111)
+	at net.sourceforge.processdash.util.DirectoryBackup.backup(DirectoryBackup.java:110)
+	at net.sourceforge.processdash.tool.bridge.client.AbstractWorkingDirectory.doBackupImpl(AbstractWorkingDirectory.java:106)
+	at net.sourceforge.processdash.tool.bridge.client.LocalWorkingDirectory.doBackup(LocalWorkingDirectory.java:112)
+	at net.sourceforge.processdash.FileBackupManager.runImpl(FileBackupManager.java:141)
+	at net.sourceforge.processdash.FileBackupManager.maybeRun(FileBackupManager.java:105)
+	at net.sourceforge.processdash.FileBackupManager$BGTask.run(FileBackupManager.java:305)
+	at net.sourceforge.processdash.BackgroundTaskManager$BackgroundTask.run(BackgroundTaskManager.java:313)
+	at net.sourceforge.processdash.BackgroundTaskManager$BackgroundTaskExecutor.run(BackgroundTaskManager.java:437)
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
+Saved /Users/betoesquivel/workspace/java/PSPTraining/PSPData/7.dat
