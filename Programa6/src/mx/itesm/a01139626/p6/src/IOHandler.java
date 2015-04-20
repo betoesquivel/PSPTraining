@@ -57,8 +57,11 @@ public class IOHandler implements ErrorMessages{
 			
 			try {
 				
-				sX = bufInput.readLine().trim();
+				sX = bufInput.readLine();
+				
 				if (sX != null) { 
+					
+					sX = sX.trim();
 					
 					// falta parsear sX y agregarlo a xXK... por ende me falta poner los setters y getters de la clase. 
 					if ( parParser.isDouble(sX) ) {

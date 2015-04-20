@@ -5,5 +5,10 @@
   <time id="84" path="/Non Project/PSP Training/Program 6/Design" start="@1429474784408" delta="26" interrupt="2" flag="A" />
   <time id="85" path="/Non Project/PSP Training/Program 6/Design" start="@1429479116942" delta="3" flag="A" />
   <time id="86" path="/Non Project/PSP Training/Program 6/Design" start="@1429480452741" delta="89" interrupt="3" flag="A" />
-  <time id="87" path="/Non Project/PSP Training/Program 6/Design Review" start="@1429486023613" delta="14" flag="A" />
+  <time id="87" path="/Non Project/PSP Training/Program 6/Design Review" start="@1429486023613" delta="19" flag="A" />
+  <time id="88" path="/Non Project/PSP Training/Program 6/Design Review" start="@1429496559587" delta="96" flag="A" />
+  <time id="89" path="/Non Project/PSP Training/Program 6/Code" start="@1429502343634" delta="21" flag="A" />
+  <time id="90" path="/Non Project/PSP Training/Program 6/Code Review" start="@1429503622309" delta="11" flag="A" />
+  <time id="91" path="/Non Project/PSP Training/Program 6/Test" start="@1429504296230" delta="13" flag="A" />
+  <time id="92" path="/Non Project/PSP Training/Program 6/Postmortem" start="@1429505702139" delta="15" flag="A" />
 </timeLogEntries>

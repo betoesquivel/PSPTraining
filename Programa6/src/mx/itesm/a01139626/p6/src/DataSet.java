@@ -1,4 +1,7 @@
 package mx.itesm.a01139626.p6.src;
+
+import java.util.ArrayList;
+
 //&p-DataSet
 //&b=115
 public class DataSet implements ErrorMessages {
@@ -16,6 +19,13 @@ public class DataSet implements ErrorMessages {
 	private double dB0;
 	private double dB1;
 	private double dYK;
+	private double dSig;
+	private double dRan;
+	private double dLS;
+	private double dLI;
+	private ArrayList<Double> dXs;
+	private ArrayList<Double> dYs;
+	private double dStandardDeviation;
 
 	//&i
 	/**
@@ -23,7 +33,7 @@ public class DataSet implements ErrorMessages {
 	 *  values with the default 0 value. 
 	 */
 	public DataSet() {
-		this.dXK = 0;
+		this.dXK = 0;	
 		this.dSumX = 0;
 		this.dSumY = 0;
 		this.dSumXY = 0;
@@ -37,8 +47,74 @@ public class DataSet implements ErrorMessages {
 		this.dB0 = 0;
 		this.dB1 = 0;
 		this.dYK = 0;
+		this.dSig = 0;
+		this.dRan = 0;
+		this.dLS = 0;
+		this.dLI = 0;
+		this.dXs = new ArrayList<Double>();
+		this.dYs = new ArrayList<Double>();
+		this.dStandardDeviation = 0;
 	}
 
+	//&i
+	/**
+	 * calculateSignificance
+	 * 
+	 * This method calculates the significance of a DataSet. It must be called in the order it is
+	 * called in the method calculate.
+	 */
+	public void calculateSignificance() {
+		
+		double dX = 0;
+		AreaUnderTDistribution areTCalculator = new AreaUnderTDistribution();
+		dX = ( Math.abs(dR) * Math.sqrt(iN - 2.0) ) / Math.sqrt( 1.0 - dR2 );
+		areTCalculator.setdX(dX);
+		areTCalculator.setiDof(iN - 2);
+		areTCalculator.calculate();
+		this.dSig = 1 - 2.0 * areTCalculator.getdP();
+		
+	}
+	
+    //&i
+	/**
+	 * calculateStandardDeviation
+	 * 
+	 * This method calculates the standard deviation of the DataSet
+	 * 
+	 */
+	public void calculateStandardDeviation(){
+		
+		double dSum = 0;
+		dSum = iN * Math.pow(dB0,  2);
+		dSum += ( 2 * dB0 * dB1 * dSumX );
+		dSum -= ( 2 * dB0 * dSumY );
+		dSum += ( Math.pow(dB1, 2) * dSumX2 );
+		dSum -= ( 2 * dB1 * dSumXY );
+		dSum += dSumY2;
+		dStandardDeviation = Math.sqrt( ( 1.0 / (iN - 2) ) * dSum );
+		
+	}
+	
+	//&i
+	/**
+	 * calculateRange
+	 * 
+	 * Calculates the range of the prediction yk.
+	 * This method must be executed in the order it is called in calculate()
+	 */
+	public void calculateRange() {
+		
+		double dSqrt = 0;
+		double dSum = 0;
+		AreaUnderTDistribution areTCalculator = new AreaUnderTDistribution();
+		dSum = dSumX2 - 2*dXAvg*dSumX + iN*Math.pow(dXAvg,2);
+		dSqrt = Math.sqrt( 1.0 + (1.0/iN) + Math.pow(dXK - dXAvg, 2)/dSum );
+	    areTCalculator.setdP(0.35);
+	    areTCalculator.setiDof(iN - 2);
+	    areTCalculator.calculateX();
+		dRan = areTCalculator.getdX() * dStandardDeviation * dSqrt;
+	}
+	
 	//&i
 	/**
 	 * addPair
@@ -57,6 +133,8 @@ public class DataSet implements ErrorMessages {
 		dSumX2 += Math.pow(dX, 2);
 		dSumY2 += Math.pow(dY, 2);
 		iN += 1;
+		dXs.add(dX);
+		dYs.add(dY);
 	}
 
 	//&i
@@ -92,7 +170,19 @@ public class DataSet implements ErrorMessages {
 			// calculate dYK
 			dYK = dB0 + dB1 * dXK;
 			
+			calculateSignificance();
+
+			calculateStandardDeviation();
+			calculateRange();
+			
+			dLS = dYK + dRan;
+			dLI = dYK - dRan;
+			if (dLI < 0){
+				dLI = 0;
+			} 
+			
 			return true;
+			
 		} else {
 			System.out.println(sEMPTY_DATA_SET);
 			return false; 
@@ -324,15 +414,122 @@ public class DataSet implements ErrorMessages {
 	}
 
 	//&i
+	/**
+	 * @return the dSig
+	 */
+	public double getdSig() {
+		return dSig;
+	}
+
+	//&i
+	/**
+	 * @param dSig the dSig to set
+	 */
+	public void setdSig(double dSig) {
+		this.dSig = dSig;
+	}
+
+	//&i
+	/**
+	 * @return the dRan
+	 */
+	public double getdRan() {
+		return dRan;
+	}
+
+	//&i
+	/**
+	 * @param dRan the dRan to set
+	 */
+	public void setdRan(double dRan) {
+		this.dRan = dRan;
+	}
+
+	//&i
+	/**
+	 * @return the dLS
+	 */
+	public double getdLS() {
+		return dLS;
+	}
+
+	//&i
+	/**
+	 * @param dLS the dLS to set
+	 */
+	public void setdLS(double dLS) {
+		this.dLS = dLS;
+	}
+
+	//&i
+	/**
+	 * @return the dLI
+	 */
+	public double getdLI() {
+		return dLI;
+	}
+
+	//&i
+	/**
+	 * @param dLI the dLI to set
+	 */
+	public void setdLI(double dLI) {
+		this.dLI = dLI;
+	}
+
+	//&i
+	/**
+	 * @return the dXs
+	 */
+	public ArrayList<Double> getdXs() {
+		return dXs;
+	}
+
+	//&i
+	/**
+	 * @param dXs the dXs to set
+	 */
+	public void setdXs(ArrayList<Double> dXs) {
+		this.dXs = dXs;
+	}
+
+	//&i
+	/**
+	 * @return the dYs
+	 */
+	public ArrayList<Double> getdYs() {
+		return dYs;
+	}
+
+	//&i
+	/**
+	 * @param dYs the dYs to set
+	 */
+	public void setdYs(ArrayList<Double> dYs) {
+		this.dYs = dYs;
+	}
+	
+	//&i
+	/**
+	 * @return the dStandardDeviation
+	 */
+	public double getdStandardDeviation() {
+		return dStandardDeviation;
+	}
+	
+	//&i
+	/**
+	 * @param dStandardDeviation the dStandardDeviation to set
+	 */
+	public void setdStandardDeviation(double dStandardDeviation) {
+		this.dStandardDeviation = dStandardDeviation;
+	}
+
+	//&i
 	public String toString() {
-		String sFormat = "N  = %d\n"
-					   + "xk = %.0f\n"
-					   + "r  = %.5f\n"
-					   + "r2 = %.5f\n"
-					   + "b0 = %.5f\n"
-					   + "b1 = %.5f\n"
-					   + "yk = %.5f";
-		return String.format(sFormat, getiN(), getdXK(), getdR(), getdR2(), getdB0(), getdB1(), getdYK());
+		String sFormat = "N  = %d\nxk = %d\nr  = %.5f\nr2 = %.5f\nb0 = %.5f\nb1 = %.5f\nyk = %.5f\nsig= %.10f\nran= %.5f\nLS = %.5f\nLI = %.5f\n";//&m
+		//&d=5
+		return String.format(sFormat, iN, (long)dXK, dR, dR2, dB0, dB1, dYK, dSig, dRan, dLS, dLI);//&m
 	}
 	
 	

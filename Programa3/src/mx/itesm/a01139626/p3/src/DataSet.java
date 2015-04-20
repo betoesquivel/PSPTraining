@@ -330,8 +330,16 @@ public class DataSet implements ErrorMessages {
 					   + "r2 = %.5f\n"
 					   + "b0 = %.5f\n"
 					   + "b1 = %.5f\n"
-					   + "yk = %.5f";
-		return String.format(sFormat, getiN(), getdXK(), getdR(), getdR2(), getdB0(), getdB1(), getdYK());
+					   + "yk = %.5f\n"
+						+ "sumX = %.5f\n"
+						+ "sumY = %.5f\n"
+						+ "sumX2 = %.5f\n"
+						+ "sumY2 = %.5f\n"
+						+ "sumXY = %.5f\n"
+						+ "xAvg = %.5f\n"
+						+ "yAvg = %.5f\n";
+		return String.format(sFormat, getiN(), getdXK(), getdR(), getdR2(), getdB0(), getdB1(), getdYK()
+				,getdSumX(), getdSumY(), getdSumX2(), getdSumY2(), getdSumXY(), getdXAvg(), getdYAvg());
 	}
 	
 	

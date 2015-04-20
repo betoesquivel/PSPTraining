@@ -4,17 +4,35 @@ Base_Parts/0/Added=3.0
 Base_Parts/0/Base=74.0
 Base_Parts/0/Deleted=14.0
 Base_Parts/0/Description="IOHandler
+Base_Parts/1/Actual Added=77.0
+Base_Parts/1/Actual Base=187.0
+Base_Parts/1/Actual Deleted=5.0
+Base_Parts/1/Actual Modified=2.0
 Base_Parts/1/Added=70.0
 Base_Parts/1/Base=115.0
 Base_Parts/1/Description="DataSet
+Base_Parts/2/Actual Added=0.0
+Base_Parts/2/Actual Base=0.0
+Base_Parts/2/Actual Deleted=0.0
+Base_Parts/2/Actual Modified=0.0
 Base_Parts/2/Added=5.0
 Base_Parts/2/Base=26.0
 Base_Parts/2/Description="DataSetAnalyzer
 Base_Parts/2/Modified=10.0
 Base_Parts_List=="012
+Code Review/Completed=@1429504280578
+Code Review/Started=@1429503622309
+Code Review/Time==11.0
+Code/Completed=@1429503620803
+Code/Started=@1429502343634
+Code/Time==21.0
+Compile/Completed=@1429504296229
+Design Review/Completed=@1429502341797
+Design Review/Defects Removed==3.0
 Design Review/Started=@1429486023613
-Design Review/Time==14.0
+Design Review/Time==115.0
 Design/Completed=@1429485996230
+Design/Defects Injected==5.0
 Design/Started=@1429471865909
 Design/Time==136.0
 Estimated New & Changed LOC/Beta0=-6.38928754447204
@@ -43,9 +61,28 @@ PROBE_Last_Run_Value/Estimated Time=172.19000620044957
 Planning/Completed=@1429321585958
 Planning/Started=@1429319516563
 Planning/Time==34.0
+Postmortem/Completed=@1429506617045
+Postmortem/Started=@1429505702139
+Postmortem/Time==15.0
+Reused Objects/0/Actual LOC=7.0
 Reused Objects/0/Description="ErrorMessages
 Reused Objects/0/LOC=8.0
+Reused Objects/1/Actual LOC=72.0
 Reused Objects/1/Description="AreaUnderTDistribution
 Reused Objects/1/LOC=81.0
-Reused_Objects_List=="01
+Reused Objects/2/Actual LOC=26.0
+Reused Objects/2/Description="DataSetAnalyzer
+Reused Objects/2/LOC=0.0
+Reused Objects/3/Actual LOC=58.0
+Reused Objects/3/Description="IOHandler
+Reused Objects/3/LOC=0.0
+Reused Objects/4/Actual LOC=115.0
+Reused Objects/4/Description="Parser
+Reused Objects/4/LOC=0.0
+Reused_Objects_List=="01234
 Started=@1429319516563
+Test/Completed=@1429505476089
+Test/Defects Removed==2.0
+Test/Started=@1429504296230
+Test/Time==13.0
+Total LOC=485.0

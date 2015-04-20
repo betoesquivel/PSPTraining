@@ -84,7 +84,7 @@ public class AreaUnderTDistribution implements ErrorMessages {
 	public String toString() {
 		
 		String sFormat;
-		sFormat = "x   = %f\ndof = %d\np   = %f";
+		sFormat = "x   = %f\ndof = %d\np   = %.10f";
 		return String.format(sFormat, getdX(), getiDof(), getdP());
 		
 	}
@@ -169,7 +169,7 @@ public class AreaUnderTDistribution implements ErrorMessages {
 		
 		int iNumSeg = 8;
 		double dW = dX / iNumSeg;
-		double dE = 0.0000001;
+		double dE = 0.00001;
 		double dPreviousP;
 		
 		dP = simpson(dX, dW, iNumSeg);
@@ -207,6 +207,7 @@ public class AreaUnderTDistribution implements ErrorMessages {
 			
 			areCalculator.calculate();
 			System.out.println(areCalculator);
+			System.out.println(String.format("%.10f", 1 - areCalculator.getdP()*2));
 		}
 	}
 

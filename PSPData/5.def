@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<defectLog>
+  <defect num="1" type="Function" inj="Design" rem="Design Review" ft="6.5" fd="" desc="Didn't see the power of two on the calculation of the range. I needed that. &#10;In the division of the range inside the sqrt." count="2" date="@1429500706108" />
+  <defect num="2" type="Function" inj="Design" rem="Design Review" ft="1.0" fd="" desc="I was setting dP in areTCalculator to .7 instead of .35&#10;" date="@1429501508789" />
+  <defect num="3" type="Function" inj="Design" rem="Test" ft="10.4" fd="" desc="Ran was not being calculated correctly because the standard deviation was doing an integer division instead of a double division." date="@1429504417980" />
+  <defect num="4" type="Function" inj="Design" rem="Test" ft="2.1" fd="" desc="The LI is less than 0 and I was stopping the program, because I the requirements were not specific enough. It seemed that the value of LI couldn't be less than 0, which for me meant, the program must stop. But it actually meant the program must replace the LI negative value with a 0." date="@1429505041210" />
+</defectLog>

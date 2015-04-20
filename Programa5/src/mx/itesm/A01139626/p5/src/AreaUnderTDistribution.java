@@ -86,7 +86,7 @@ public class AreaUnderTDistribution implements ErrorMessages {
 	public String toString() {
 		
 		String sFormat;
-		sFormat = "p   = %.5f\ndof = %d\nx   = %.5f"; //&m
+		sFormat = "p   = %.10f\ndof = %d\nx   = %.10f"; //&m
 		return String.format(sFormat, getdP(), getiDof(), getdX()); //&m
 		
 	}
